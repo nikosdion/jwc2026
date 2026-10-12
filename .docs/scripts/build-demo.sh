@@ -130,6 +130,7 @@ check "the-collection/transport-exploration/the-personal-nuclear-automobile" 'mu
 check "plan-your-visit" "accordion"          "visit page renders"
 
 echo
+echo "  Super User (demo): admin / "'@dminU$3R123'" — change when restoring from a backup."
 if [ "$failures" -eq 0 ]; then
     printf '\033[32mBuild verified: %s — all checks passed.\033[0m\n' "$SITE_URL"
     exit 0

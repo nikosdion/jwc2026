@@ -10,6 +10,7 @@
 
 # --- Custom implementation -------------------------------------------------
 !/.gitignore
+!/README.md
 !/AGENTS.md
 !/.docs
 !/.docs/**
@@ -55,6 +56,7 @@
 /media/templates/site/cassiopeia_muf/derived/
 
 # --- Explicitly never track ------------------------------------------------
+/.idea/
 configuration.php
 .htaccess
 /phpinfo.php
