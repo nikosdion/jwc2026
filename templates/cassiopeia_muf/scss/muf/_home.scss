@@ -1,0 +1,447 @@
+// ============================================================================
+// MUF — homepage section compositions
+// Each homepage band is art-directed differently; none of them is "a row of
+// identical Bootstrap cards". Sections consume Joomla module positions:
+// see .docs/design.md for the position → module → layout mapping.
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// 01 — Hero / current feature (position: muf-hero)
+// A full-bleed asymmetric composition: oversized ghost display type on the
+// left, the featured exhibition's wireframe rendering on the right, archival
+// readouts along the bottom edge.
+// ---------------------------------------------------------------------------
+.muf-hero {
+  position: relative;
+  overflow: clip;
+
+  .muf-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    gap: clamp(1.5rem, 4vw, 4rem);
+    align-items: center;
+    min-height: clamp(30rem, 78vh, 44rem);
+    padding-block: clamp(3rem, 8vw, 6rem);
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+  }
+
+  .muf-hero__title {
+    font-size: clamp(2.6rem, 6.4vw, 5.4rem);
+    margin-bottom: 1.25rem;
+    color: $muf-ice;
+
+    em {
+      font-style: normal;
+      color: $muf-cyan;
+    }
+  }
+
+  .muf-hero__lede {
+    max-width: 34rem;
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    color: shade-color($muf-ice, 10%);
+    margin-bottom: 2rem;
+  }
+
+  // The hero figure sits in a "specimen frame" — hairline border, archival
+  // corner marks, slight perspective tilt that flattens on touch/small screens.
+  .muf-hero__figure {
+    position: relative;
+    margin: 0;
+    transform: perspective(60rem) rotateY(-4deg) rotateX(1.5deg);
+    transition: transform .5s ease;
+
+    @include media-breakpoint-down(lg) {
+      transform: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      &:hover { transform: perspective(60rem) rotateY(-1.5deg); }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid rgba($muf-cyan, .35);
+      border-radius: $border-radius;
+      background-color: $muf-surface-2;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, .45);
+    }
+
+    // Corner registration marks.
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1.1rem;
+      height: 1.1rem;
+      border: 1.5px solid $muf-cyan;
+    }
+
+    &::before {
+      top: -.55rem;
+      left: -.55rem;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    &::after {
+      bottom: -.55rem;
+      right: -.55rem;
+      border-left: 0;
+      border-top: 0;
+    }
+
+    figcaption {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .35rem 1rem;
+      margin-top: .8rem;
+      font-family: $muf-font-mono;
+      font-size: .72rem;
+      letter-spacing: .08em;
+      color: $muf-muted;
+    }
+  }
+
+  // Instrument readout along the hero's bottom edge.
+  .muf-hero__readout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem 2.5rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--muf-hairline);
+    font-family: $muf-font-mono;
+    font-size: .75rem;
+    color: $muf-muted;
+
+    span { white-space: nowrap; }
+
+    strong { color: $muf-cyan; font-weight: 400; }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 02 — Currently Showing (position: muf-current)
+// Three exhibition cards of deliberately different heights: a tall lead card
+// and two shorter ones — editorial, not uniform.
+// ---------------------------------------------------------------------------
+.muf-exhibitions-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1rem, 2.5vw, 2rem);
+
+  > * { grid-column: span 4; }
+
+  // Lead card spans 6 and is taller; companions span 3 each? No — keep 4/4/4
+  // on xl, but the FIRST card is compositionally larger via aspect + type.
+  @include media-breakpoint-between(md, xl) {
+    > * { grid-column: span 6; }
+  }
+
+  @include media-breakpoint-down(md) {
+    > * { grid-column: 1 / -1; }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 03 — From the Archives (position: muf-archive)
+// One oversized artifact highlight: image bleeds to the left edge, metadata
+// column on the right.
+// ---------------------------------------------------------------------------
+.muf-archive {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: end;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 1fr;
+  }
+
+  .muf-archive__figure {
+    margin: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      border: 1px solid var(--muf-hairline);
+      border-radius: $border-radius-lg;
+      background: $muf-surface-2;
+    }
+  }
+
+  .muf-archive__title {
+    font-size: clamp(1.9rem, 3.6vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .muf-archive__aside {
+    border-left: 1px solid var(--muf-hairline);
+    padding-left: clamp(1rem, 2.5vw, 2rem);
+
+    @include media-breakpoint-down(lg) {
+      border-left: 0;
+      padding-left: 0;
+      border-top: 1px solid var(--muf-hairline);
+      padding-top: 1.5rem;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 04 — Explore the Collection (position: muf-collection)
+// Grouped by collection category: four "shelf" bands, each a horizontal strip
+// of artifacts with its own index tab.
+// ---------------------------------------------------------------------------
+.muf-shelves {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.muf-shelf {
+  display: grid;
+  grid-template-columns: minmax(9rem, 13rem) 1fr;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: start;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--muf-hairline);
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+  }
+
+  .muf-shelf__label {
+    position: sticky;
+    top: calc(var(--muf-header-height) + 1rem);
+
+    .muf-shelf__index {
+      display: block;
+      font-family: $muf-font-mono;
+      font-size: .75rem;
+      color: $muf-muted;
+      letter-spacing: .14em;
+      margin-bottom: .4rem;
+    }
+
+    h3 { font-size: 1.15rem; margin-bottom: .5rem; }
+
+    a {
+      font-family: $muf-font-mono;
+      font-size: .78rem;
+      letter-spacing: .06em;
+    }
+  }
+
+  .muf-shelf__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+    gap: 1.1rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 05 — Upcoming Events (position: muf-events)
+// A chronological strip: date blocks on a hairline rail.
+// ---------------------------------------------------------------------------
+.muf-event-rail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0;
+  border-block: 1px solid var(--muf-hairline);
+
+  .muf-event-rail__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 1.4rem 1.5rem;
+    border-inline-start: 1px solid var(--muf-hairline);
+    text-decoration: none;
+    color: inherit;
+    transition: background-color .18s ease;
+
+    &:first-child { border-inline-start: 0; }
+    &:hover { background-color: rgba($muf-cyan, .05); text-decoration: none; }
+
+    .muf-event-rail__date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-width: 3.4rem;
+      padding-top: .2rem;
+
+      .day {
+        font-family: $muf-font-display;
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: $muf-cyan;
+        line-height: 1;
+      }
+
+      .month {
+        font-family: $muf-font-mono;
+        font-size: .72rem;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        color: $muf-muted;
+        margin-top: .25rem;
+      }
+    }
+
+    h3 { font-size: 1rem; margin: .1rem 0 .35rem; color: $muf-ice; }
+    p { font-size: .85rem; color: $muf-muted; margin: 0; }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 06 — Curator's Pick (position: muf-curator)
+// Editorial pull-quote style module with a narrow vertical image.
+// ---------------------------------------------------------------------------
+.muf-curator {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 1fr;
+  }
+
+  .muf-curator__figure {
+    margin: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border: 1px solid rgba($muf-magenta, .4);
+      border-radius: $border-radius;
+      background: $muf-surface-2;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    font-family: $muf-font-display;
+    font-size: clamp(1.35rem, 2.6vw, 2.05rem);
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: -.01em;
+    color: $muf-ice;
+
+    footer {
+      margin-top: 1.4rem;
+      font-family: $muf-font-mono;
+      font-size: .82rem;
+      letter-spacing: .08em;
+      color: $muf-muted;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 07 — From the Journal (position: muf-journal)
+// Asymmetric magazine grid: lead story spans 7 columns with big type, two
+// secondary stories stack in the remaining 5.
+// ---------------------------------------------------------------------------
+.muf-journal-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+
+  > *:nth-child(1) { grid-column: span 7; }
+  > *:nth-child(2),
+  > *:nth-child(3) { grid-column: span 5; }
+
+  @include media-breakpoint-down(lg) {
+    > * { grid-column: 1 / -1 !important; }
+  }
+
+  .muf-journal-lead__title { font-size: clamp(1.7rem, 3.2vw, 2.5rem); }
+}
+
+// ---------------------------------------------------------------------------
+// 08 — Plan Your Visit (position: muf-visit)
+// Practical panel: hours/admission in a spec table, CTA buttons, small map
+// motif rendered in pure CSS gridlines (no imagery dependency).
+// ---------------------------------------------------------------------------
+.muf-visit {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 1fr;
+  }
+
+  .muf-visit__panel {
+    padding: clamp(1.25rem, 3vw, 2.25rem);
+    background-color: rgba($muf-surface-2, .8);
+    border: 1px solid var(--muf-hairline);
+    border-radius: $border-radius-lg;
+  }
+
+  .muf-visit__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-top: 1.5rem;
+  }
+}
+
+// Decorative CSS-only "transit map" panel for the visit band: concentric
+// hairline rings + route lines. Pure decoration; all real info is in HTML.
+.muf-visit__map {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--muf-hairline);
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 62% 44%, rgba($muf-cyan, .16) 0 2px, transparent 3px),
+    radial-gradient(circle at 62% 44%, transparent 0 4.5rem, rgba($muf-cyan, .14) 4.5rem 4.65rem, transparent 4.65rem 8rem, rgba($muf-violet, .13) 8rem 8.15rem, transparent 8.15rem),
+    linear-gradient(32deg, transparent 49.7%, rgba($muf-magenta, .35) 49.7% 50.1%, transparent 50.1%),
+    linear-gradient(-24deg, transparent 49.8%, rgba($muf-cyan, .3) 49.8% 50.05%, transparent 50.05%),
+    linear-gradient(var(--muf-gridline) 1px, transparent 1px),
+    linear-gradient(90deg, var(--muf-gridline) 1px, transparent 1px),
+    $muf-surface-2;
+  background-size: auto, auto, auto, auto, 2.5rem 2.5rem, 2.5rem 2.5rem, auto;
+
+  .muf-visit__map-pin {
+    position: absolute;
+    left: 62%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    font-family: $muf-font-mono;
+    font-size: .72rem;
+    letter-spacing: .1em;
+    color: $muf-cyan;
+    background: rgba($muf-navy, .8);
+    border: 1px solid rgba($muf-cyan, .6);
+    border-radius: $border-radius-sm;
+    padding: .3rem .55rem;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      width: 1px;
+      height: 1.6rem;
+      background: rgba($muf-cyan, .6);
+    }
+  }
+}

@@ -1,0 +1,228 @@
+// ============================================================================
+// MUF — site header & primary navigation
+// A slim instrument-bar header: museum wordmark, tagline, and a nav that
+// behaves like a gallery wayfinding system.
+// =====================================================================================
+
+.container-header {
+  background-color: rgba($muf-navy, .82);
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  border-bottom: 1px solid var(--muf-hairline);
+  position: relative;
+  z-index: 1030;
+
+  // Cyan instrument line along the header's bottom edge.
+  &::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: -1px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 2%, rgba($muf-cyan, .55) 30%, rgba($muf-violet, .55) 70%, transparent 98%);
+  }
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: minmax(0, auto) 1fr;
+  align-items: center;
+  gap: 1rem 2.5rem;
+  min-height: var(--muf-header-height);
+  padding-block: .5rem;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+
+// On small screens the wordmark may wrap rather than force overflow.
+@include media-breakpoint-down(sm) {
+  .muf-brand__name {
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .muf-brand__tag {
+    letter-spacing: .1em;
+  }
+}
+
+// --- Wordmark ----------------------------------------------------------------
+.muf-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1;
+  text-decoration: none;
+  color: $muf-ice;
+
+  .muf-brand__name {
+    font-family: $muf-font-display;
+    font-weight: 700;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    letter-spacing: .02em;
+    white-space: nowrap;
+
+    span {
+      color: $muf-cyan;
+    }
+  }
+
+  .muf-brand__tag {
+    font-family: $muf-font-mono;
+    font-size: .68rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: $muf-muted;
+    margin-top: .3rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $muf-ice;
+
+    .muf-brand__name span { color: $muf-mint; }
+  }
+}
+
+// --- Primary nav ---------------------------------------------------------------
+.muf-nav {
+  justify-self: end;
+
+  @include media-breakpoint-down(lg) {
+    justify-self: stretch;
+    grid-column: 1 / -1;
+  }
+
+  .nav {
+    gap: .15rem;
+  }
+
+  .nav-link {
+    font-family: $muf-font-mono;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: shade-color($muf-ice, 12%);
+    padding: .55rem .8rem;
+    border: 1px solid transparent;
+    border-radius: $border-radius-sm;
+    transition: color .16s ease, border-color .16s ease, background-color .16s ease;
+
+    // Small index number before each item, like gallery room numbers.
+    &::before {
+      content: attr(data-index);
+      display: inline-block;
+      margin-right: .45rem;
+      font-size: .68rem;
+      color: shade-color($muf-muted, 18%);
+      transition: color .16s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $muf-mint;
+      text-decoration: none;
+      border-color: rgba($muf-cyan, .3);
+      background-color: rgba($muf-cyan, .06);
+
+      &::before { color: $muf-cyan; }
+    }
+
+    &.active,
+    &[aria-current="page"] {
+      color: $muf-cyan;
+      border-color: rgba($muf-cyan, .55);
+      background-color: rgba($muf-cyan, .08);
+
+      &::before { color: $muf-mint; }
+    }
+  }
+
+  // Parent items with children get a subtle marker.
+  .nav-item.dropdown > .nav-link {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: .42rem;
+      height: .42rem;
+      margin-left: .5rem;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: rotate(45deg) translateY(-.18rem);
+      opacity: .6;
+    }
+  }
+
+  .dropdown-menu {
+    --bs-dropdown-min-width: 14rem;
+    border-radius: $border-radius;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .5), 0 0 0 1px rgba($muf-cyan, .08);
+    padding: .5rem;
+    margin-top: .5rem;
+
+    .dropdown-item {
+      font-size: .92rem;
+      border-radius: $border-radius-sm;
+      padding: .5rem .75rem;
+
+      &::before {
+        content: "—";
+        margin-right: .5rem;
+        color: shade-color($muf-muted, 15%);
+      }
+    }
+  }
+}
+
+// Mobile nav toggle — an instrument-style square button.
+.muf-nav-toggle {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .5rem .8rem;
+  font-family: $muf-font-mono;
+  font-size: .75rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: $muf-cyan;
+  background: transparent;
+  border: 1px solid rgba($muf-cyan, .5);
+  border-radius: $border-radius-sm;
+
+  &:hover { color: $muf-mint; border-color: $muf-mint; }
+
+  .icon-bar {
+    display: block;
+    width: 1.1rem;
+    height: 1.5px;
+    background: currentColor;
+    box-shadow: 0 -.36rem 0 currentColor, 0 .36rem 0 currentColor;
+  }
+}
+
+// Collapsed mobile navigation panel.
+.muf-nav-collapse {
+  @include media-breakpoint-down(lg) {
+    padding: .75rem 0 1.25rem;
+
+    .nav { gap: .35rem; }
+
+    .nav-link {
+      border-color: rgba($muf-border, .6);
+      padding: .7rem .9rem;
+    }
+  }
+}
+
+// Search box in the header (mod_search).
+.header-search {
+  .form-control {
+    font-family: $muf-font-mono;
+    font-size: .85rem;
+    background-color: rgba($muf-surface-2, .75);
+  }
+}

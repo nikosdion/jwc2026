@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "cassiopeia_muf",
+  "version": "1.0.0",
+  "description": "Web assets for the cassiopeia_muf child template (The Museum of Unbuilt Futures). These entries intentionally reuse the parent's asset names (template.cassiopeia.*) so every dependency on template.active keeps working while the styles resolve to this child's compiled CSS.",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "template.cassiopeia.ltr",
+      "description": "MUF theme CSS (dark retrofuturist palette, Bootstrap 5.3 dark color mode). Compiled from scss/template.scss.",
+      "type": "style",
+      "uri": "template.min.css",
+      "dependencies": [
+        "fontawesome"
+      ]
+    },
+    {
+      "name": "template.cassiopeia.rtl",
+      "description": "MUF theme CSS for RTL direction.",
+      "type": "style",
+      "uri": "template-rtl.min.css",
+      "dependencies": [
+        "fontawesome"
+      ]
+    },
+    {
+      "name": "template.offline",
+      "description": "Styles for offline.php.",
+      "type": "style",
+      "uri": "offline.min.css"
+    },
+    {
+      "name": "template.cassiopeia_muf.fonts",
+      "description": "Local OFL fonts (Space Grotesk, Inter, Space Mono). Loaded via @font-face from the compiled CSS; asset kept as a named dependency hook.",
+      "type": "style",
+      "uri": "template.min.css"
+    }
+  ]
+}

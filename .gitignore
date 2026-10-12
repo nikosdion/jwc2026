@@ -1,0 +1,66 @@
+# ============================================================================
+# The Museum of Unbuilt Futures — root allowlist .gitignore
+# Only the custom implementation and materials needed to reproduce it are
+# tracked. All Joomla core files, the parent Cassiopeia template, caches,
+# credentials, plans and build outputs are excluded.
+# ============================================================================
+
+# Ignore everything at the root by default
+/*
+
+# --- Custom implementation -------------------------------------------------
+!/.gitignore
+!/AGENTS.md
+!/.docs
+!/.docs/**
+/.plans/
+
+# Cassiopeia child template (sources only; compiled CSS is a build output)
+!/templates
+/templates/*
+!/templates/cassiopeia_muf
+!/templates/cassiopeia_muf/**
+
+# Custom module
+!/modules
+/modules/*
+!/modules/mod_artifactspotlight
+!/modules/mod_artifactspotlight/**
+
+# Locally generated site imagery (FLUX.2 [pro] assets, committed by design)
+!/images
+/images/*
+!/images/muf
+!/images/muf/**
+!/images/muf/.gitkeep
+
+# Child template media: fonts and template artwork are tracked,
+# compiled css/js are build outputs and stay untracked.
+!/media
+/media/*
+!/media/templates
+/media/templates/*
+!/media/templates/site
+/media/templates/site/*
+!/media/templates/site/cassiopeia_muf
+/media/templates/site/cassiopeia_muf/*
+!/media/templates/site/cassiopeia_muf/fonts
+!/media/templates/site/cassiopeia_muf/fonts/**
+!/media/templates/site/cassiopeia_muf/images
+!/media/templates/site/cassiopeia_muf/images/**
+!/media/templates/site/cassiopeia_muf/joomla.asset.json
+
+# Responsive-image derivatives are a build output of MufImage (on-demand,
+# regenerated from sources) — never commit them.
+/media/templates/site/cassiopeia_muf/derived/
+
+# --- Explicitly never track ------------------------------------------------
+configuration.php
+.htaccess
+/phpinfo.php
+administrator/cache/
+cache/
+tmp/
+/logs/
+*.log
+.DS_Store

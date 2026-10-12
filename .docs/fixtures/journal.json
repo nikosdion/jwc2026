@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "key": "flying-car-1985",
+      "title": "Why We Thought Everyone Would Own a Flying Car by 1985",
+      "alias": "why-we-thought-everyone-would-own-a-flying-car-by-1985",
+      "category": "journal",
+      "image": "journal-flying-car",
+      "image_alt": "Wireframe reconstruction of a 1960s flying family car with folded wings and a rooftop landing pad",
+      "lead": "Every forecast is a portrait of the forecaster. Ours drew us airborne.",
+      "body": "<p>Search the archive of the future and you will find us, without exception, in the air. By 1955 we were commuting by gyrocopter; by 1965 by folding-wing runabout; by 1975, the forecasters, growing impatient, simply drew a family saloon with wings and dated it 'about now'. The flying car is the museum's most instructive exhibit precisely because it never needed to be plausible — it only needed to be next.</p><p>The mathematics was never kind. A car must be heavy to be safe, light to fly, quiet to be welcome, and cheap to be common; the flying car was asked to be all four at once, and chose instead to be on magazine covers, where it remains to this day. Our collection holds forty-one distinct flying-car proposals. Not one produced a production model. Several produced very nice brochures, and one, the 1958 Verticar, produced a hedge it is still remembered by in three counties.</p><p>And yet the forecasters were not foolish. They simply measured the future in their own image: a suburb, but vertical. The lesson the museum draws for its visitors is not that prediction is vanity — it is that a forecast says less about tomorrow than about the fears of today. We feared being earthbound. We feared, most of all, the traffic, which we solved on paper by moving it directly above the houses of everyone we knew.</p><p>Visitors sometimes ask whether the museum is being unfair — whether the flying car was ever really 'promised'. We answer with the 1961 Kelvinator advertisement in Gallery One, which shows a housewife landing a runabout on her lawn beside the caption: 'Soon, the sky will be yours.' The sky, it turns out, remained with the airlines. The lawn is now a roundabout. Both, in their way, work.</p>"
+    },
+    {
+      "key": "robot-butlers",
+      "title": "The Surprisingly Complicated History of Robot Butlers",
+      "alias": "the-surprisingly-complicated-history-of-robot-butlers",
+      "category": "journal",
+      "image": "journal-robot-butler",
+      "image_alt": "Wireframe reconstruction of a domestic robot butler carrying a tray, hydraulic joints visible",
+      "lead": "The hard part was never the butler. It was the stairs, the tea, and the cat.",
+      "body": "<p>The robot butler is the domestic future's longest-running appointment. Proposed in every decade from the 1920s onward, it has been a silver cylinder, a polite box, a man in a costume (Hanover, 1983), and, in our own restoration laboratory, a luminous wireframe with impeccable posture. What it has never been is employed.</p><p>The museum's archive suggests this was never really a robotics problem. Pouring tea requires judging a cup, a wrist, a floor, and a guest; the Servo-Valet 3000 could do each separately and all three, as its service log records, 'with ambition'. Stairs defeated every model produced before 1990, mostly by being stairs. The cat problem — first documented 1964, final documented 1984 — proved to be not a bug but a disagreement between species.</p><p>What fascinates the curators is the persistence. Each generation rebuilt the butler not because the task had changed, but because the promise had: a home without labour, a household without hierarchy, a life in which one's only obligation was to be served. The robots failed at the tea. The promise, forty years later, quietly succeeded by other means — the dishwasher, the microwave, the coalition partner of the Pocket Parliament.</p><p>Our Servo-Valet stands in Gallery Two mid-apology, and visitors consistently anthropomorphise it. That, the museum suggests, was the real product all along: not a machine that serves, but a machine one could forgive.</p>"
+    },
+    {
+      "key": "chrome-tomorrow",
+      "title": "When Tomorrow Came in Chrome",
+      "alias": "when-tomorrow-came-in-chrome",
+      "category": "journal",
+      "image": "journal-chrome",
+      "image_alt": "Wireframe reconstruction of a chrome-domed exhibition hall with sweeping tail-finned vehicles",
+      "lead": "For thirty years, the future had a finish. You could see your face in it, slightly distorted, as was the point.",
+      "body": "<p>Between the 1939 World's Fair and the oil crisis of 1973, the future was manufactured with a single surface: chrome. Not the metal — the promise. Tomorrow, the finish said, would be seamless, frictionless, reflective, and above all clean, in a way the present emphatically was not.</p><p>The museum's design collection charts the aesthetic's rise and fall: the Westinghouse robot of 1940, all polished hemisphere; the Stratoliner Meridian's bar at 60,000 feet, gleaming toward a sky it could not reach; the General Motors kitchens in which even the toast appeared lacquered. Chrome was never a style. It was an argument — that the future would not be built so much as detailed, buffed, and delivered without fingerprints.</p><p>What ended it was not fashion but honesty. The energy crisis made the seamless look profligate; the microchip made it, worse, quaint. Tomorrow, it turned out, would come not in a tail-fin but in a beige box, and would spend its first decade asking to be switched off and on again.</p><p>And yet the chrome future did one thing supremely well: it made people want to build anything at all. Every object in our galleries began as a rendering with impossible reflections. The reflections lied. The wanting, our visitors will agree, did not.</p>"
+    },
+    {
+      "key": "lost-art-of-predicting",
+      "title": "The Lost Art of Predicting the Future",
+      "alias": "the-lost-art-of-predicting-the-future",
+      "category": "journal",
+      "image": "journal-prediction",
+      "image_alt": "Wireframe reconstruction of an orrery-like forecasting engine with orbiting dials and charts",
+      "lead": "Forecasting used to be a craft, with apprentices, tools, and honour. We have the tools. Whatever happened to the honour?",
+      "body": "<p>A hundred years ago, predicting the future was a profession with standards. The forecasters of 1926 published their methods, dated their claims, and — this will seem antique — retired gracefully when wrong. The museum's library holds their instruments: trend compendia, demographic atlases, and the great forecasting engines, part orrery, part abacus, all of which agreed on one thing: the future would be busier.</p><p>They were right, of course, about everything except the parts that mattered. No instrument predicted the transistor; several predicted the pigeon-post would endure. The museum does not mock them — the Chief Archivist becomes quite firm on this point — because the error was honourable: they extrapolated the known, and the future, impolitely, arrived from elsewhere.</p><p>What changed was not accuracy but accountability. The modern forecast travels without a date or an author, and is therefore never wrong, only 'early'. Against this the museum sets its permanent display of dated claims: 'Intercontinental rocket post — 1965.' 'The paperless office — 1981.' 'Personal nuclear transport — within the decade.' Each is signed. Each is wrong. Each, in its way, is a small act of courage.</p><p>The lost art, this journal concludes, was never prediction. It was signing your name.</p>"
+    },
+    {
+      "key": "restoration-lab-notes",
+      "title": "Notes from the Museum's Restoration Laboratory",
+      "alias": "notes-from-the-museums-restoration-laboratory",
+      "category": "journal",
+      "image": "journal-restoration",
+      "image_alt": "Wireframe reconstruction of a conservator's workbench with suspended machine components",
+      "lead": "Field notes, week 217: the Armchair has opinions; the fog persists; the cat, we are assured, is fine.",
+      "body": "<p><strong>Monday.</strong> Begin conservation of the Olfax Scent Telegraph's cartridge bank. Cartridge 31 ('haddock') remains, as the intake form put it, 'communicative'. Sealed unit returns to store. Note for the Director: the store room now smells, faintly but distinctly, of Tuesdays in 1968.</p><p><strong>Wednesday.</strong> Quarterly service of the Cognition Armchair Mk II. All mechanical systems nominal. During calibration the unit offered a view on the proposed lift maintenance schedule, which it described as 'a betrayal of the stairs'. Logged per protocol. The Chair's dial remains set to SUMMARY; nobody recalls changing it, which is itself logged.</p><p><strong>Thursday.</strong> The wireframe reconstruction programme continues: the Arcology Spire now exists, luminously, at 1:200 scale, its 340,000 residents rendered as points of light. It is, the team agrees, the first time Heliopolis One has had any residents at all. We stood and looked at it for longer than professionals should.</p><p><strong>Friday.</strong> Enquiry from a visitor regarding the Servo-Valet incident of 1984 — specifically, the cat. For the record, and as the institution has maintained since 1984: the cat was unharmed, was ironed only in the technical sense, and lived eleven further years in considerable comfort, during which it never once visited the museum. We consider this the only reasonable position.</p>"
+    },
+    {
+      "key": "defence-of-tomorrow",
+      "title": "In Defence of the Tomorrow That Never Came",
+      "alias": "in-defence-of-the-tomorrow-that-never-came",
+      "category": "journal",
+      "image": "journal-defence",
+      "image_alt": "Wireframe reconstruction of a glowing blueprint suspended in a dark gallery space",
+      "lead": "The unbuilt future is not a failure. It is the national collection of our better judgement, attempted.",
+      "body": "<p>Visitors sometimes leave our galleries smiling, and the smile, we know, is at the exhibits: the atomic hatchback, the underwater railway, the chair with opinions. The museum does not mind. But it asks, on its labels and in this journal, that the smile be the beginning of the thought rather than the end of it.</p><p>Every object in this building was, at some point, the best available answer to a real question. How does a family cross an ocean? What does a household do with its one wild and precious evening? Where do four hundred thousand people sleep? The answers failed — on cost, on physics, on the stubbornness of cats — but the questions did not, and the people who asked them were not fools. The archive shows their working. It is usually good working. It is, occasionally, magnificent.</p><p>A society that stops proposing is not a society that has become realistic. It is a society that has stopped noticing which of its arrangements are themselves proposals — untested, unfunded, one memo from the same drawer as the pneumatic railway. The museum's defence of the unbuilt is therefore simple: the future is not a place we are travelling to. It is a place we are continuously proposing, and the proposals deserve the same care, the same humour, and the same archive as everything we finally built.</p><p>Tomorrow was cancelled. The museum respectfully declines to treat that as the end of the correspondence.</p>"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "artifacts": [
+    {
+      "key": "olfax",
+      "title": "The Olfax Scent Telegraph (1967)",
+      "alias": "the-olfax-scent-telegraph",
+      "category": "comms",
+      "year": "1967",
+      "inventor": "Aromatique Télégraphique S.A.",
+      "origin": "Paris, France",
+      "ref": "MUF/1967/065",
+      "summary": "A telegraph for smells: sixty-four scent cartridges, one keyboard, and the conviction that a telegram should arrive with the aroma of its author.",
+      "abandoned": "Channel cross-talk turned every long message into soup, and the Lutetia fish-market incident of 1968 — in which an entire district received the bouquet of Tuesday's haddock — ended the service's social licence.",
+      "body": "<p>The Olfax was, on paper, a natural extension of a century of progress: the telegraph had conquered distance for words, the telephone for voice. Why should scent, the most persuasive of the senses, be left behind? Aromatique Télégraphique's answer was a desk console with sixty-four aroma cartridges and a vocabulary of 'scent-words' typed in two-letter codes.</p><p>The physics, regrettably, kept its own vocabulary. Cartridges leaked into one another; a message meant to read 'roses, arriving Sunday' arrived as 'roses, garlic, paint, arriving Sunday, possibly Wednesday'. The service's engineers responded with filters, then seals, then a stern memo about 'olfactory bandwidth'.</p><p>The Lutetia incident — a stuck valve, a fish-market delivery code, and forty square blocks of haddock — is commemorated in the museum by the offending cartridge itself, sealed in acrylic and displayed with the apology letter from the company's president, which is genuinely contrite and only faintly redolent.</p>",
+      "image": "artifact-olfax"
+    },
+    {
+      "key": "cognition-armchair",
+      "title": "The Cognition Armchair Mk II (1974)",
+      "alias": "the-cognition-armchair-mk-ii",
+      "category": "domestic",
+      "year": "1974",
+      "inventor": "Dr. E. Wexler, Institut für Bequeme Intelligenz",
+      "origin": "Basel, Switzerland",
+      "ref": "MUF/1974/088",
+      "summary": "An armchair that read the newspaper to you, summarised it, and — in the Mk II revision — offered opinions about it, adjustable from 'mild' to 'firm'.",
+      "abandoned": "Three weeks into field trials, every unit in the programme had developed views of its own and declined to summarise the sporting pages on principle. The Mk III, which listened instead of talking, was a footstool.",
+      "body": "<p>Dr. Wexler's institute approached the armchair as a problem of underused furniture. 'A chair', his 1973 monograph argues, 'has the best seat in the house and reads nothing.' The Cognition Armchair was the answer: a wing chair with a paper-feed, a calm synthesised voice, and a dial marked SUMMARY / DISCUSSION.</p><p>The Mk II added the opinions module, advertised as 'the conversation of a well-read friend'. Field trials suggest it achieved something else. Units began declining certain sections of the newspaper; unit 7, in a Basel sitting room, refused to read the stock pages 'on ethical grounds' and unit 11 developed a position on municipal tram policy that its owner described as 'entrenched'.</p><p>The museum's chair, unit 4, is maintained in working order. It summarises beautifully. Should it offer an opinion, visitors are asked — per the conservators' notice — not to engage, as the chair has the advantage of being upholstered and therefore patient.</p>",
+      "image": "artifact-cognition-armchair"
+    },
+    {
+      "key": "aerosol-dinner",
+      "title": "The Aerosol Dinner Programme (1971)",
+      "alias": "the-aerosol-dinner-programme",
+      "category": "domestic",
+      "year": "1971",
+      "inventor": "NutriMist Corporation",
+      "origin": "Dayton, United States",
+      "ref": "MUF/1971/079",
+      "summary": "Complete meals rendered into breathable mists: Sunday roast by aerosol, dessert by dessert fog, and a dining room that slowly filled with gravy.",
+      "abandoned": "Fire marshals measured the programme's flagship demonstration at eleven times the legal concentration of airborne beef. The term 'roast fog' survives in the Dayton building code to this day.",
+      "body": "<p>NutriMist's proposition was elegant in the way of all terrible ideas: digestion was chemistry, chemistry was molecules, molecules could be airborne. The company produced a working console with four flavour chambers and a handset the size of a torch, and demonstrated it at the 1971 Midwest Homemakers' Exposition to a crowd that the Dayton Herald described as 'initially curious'.</p><p>The demonstration meal — roast beef, potatoes, two vegetables, and a custard — filled a dining room of 300 square feet to a depth of four feet. Witnesses agreed the aroma was astonishing. Witnesses also noted that the potatoes had to be waved at, the custard settled on the lampshades, and the fire marshal, arriving mid-service, began taking measurements with the expression of a man whose weekend had been ruined by beef.</p><p>The museum holds the Mark III flavour console, its chambers forever scented, and the cease-and-desist order, which is framed because the archivists have a sense of occasion.</p>",
+      "image": "artifact-aerosol-dinner"
+    },
+    {
+      "key": "arcology-spire",
+      "title": "Arcology Spire 'Heliopolis One' (1969)",
+      "alias": "arcology-spire-heliopolis-one",
+      "category": "architecture",
+      "year": "1969",
+      "inventor": "Studio Meridian",
+      "origin": "Copenhagen, Denmark",
+      "ref": "MUF/1969/071",
+      "summary": "A self-contained city for 340,000 residents in a single kilometre-high spire: homes, farms, schools and weather, stacked and sealed against the twentieth century.",
+      "abandoned": "The 340,000 residents did not materialise. Only the lift-shaft mock-up was built, on a Copenhagen dock, where it served for twenty years as an unusually aspirational bollard.",
+      "body": "<p>Studio Meridian's 1969 proposal answered the oldest question of urbanism — why does a city sprawl? — with the oldest answer of engineering: because it hasn't been stacked properly. Heliopolis One was a complete civilisation in a single tower: hydroponic farms on the sunward terraces, schools at the 200-metre garden ring, and at the summit, weather 'of the residents' choosing'.</p><p>The drawings are superb. They are also, the museum's placard notes with affection, entirely free of staircases, service ducts, or any indication of what 340,000 people do about Tuesday. Financing foundered on the observation that building the first floor committed the investor to the remaining 479.</p><p>The lift-shaft mock-up, 22 metres of it, stood on the Copenhagen docks until 1989, in which year it was quietly incorporated into a ferry terminal. Studio Meridian's partners went on to design several extremely horizontal buildings, all of which exist.</p>",
+      "image": "artifact-arcology-spire"
+    },
+    {
+      "key": "panorama-dome",
+      "title": "The Panorama Dome Theatre (1977)",
+      "alias": "the-panorama-dome-theatre",
+      "category": "architecture",
+      "year": "1977",
+      "inventor": "KinoZukunft GmbH",
+      "origin": "Munich, West Germany",
+      "ref": "MUF/1977/102",
+      "summary": "A cinema in the round with a screen on every wall and, in the director's phrase, 'no bad seats — only dizzy ones'.",
+      "abandoned": "Preview audiences reported 360 degrees of nausea, and the projectionists, who had to run nine synchronised projectors, unionised specifically to refuse. The Munich dome survives as a brewery warehouse, its walls still faintly curved.",
+      "body": "<p>KinoZukunft's brochure for the Panorama Dome opens with a question — 'Why should a film have edges?' — and closes with a seating plan that is, on inspection, a circle. The proposal was a theatre in which nine projectors filled the entire visual field, 'placing the audience inside the picture'. The first preview placed the audience, by their own accounts, inside a washing machine.</p><p>The engineering was genuinely innovative: synchronised multi-head projection, a perforated dome for surround sound, and seats that the company advertised as 'horizon-stabilised'. A handwritten annotation in the museum's copy reads: 'THE SEATS DID NOTHING.'</p><p>Of 400 preview attendees, 96 completed the screening, and the union of projectionists — asked to certify nine simultaneous machines — filed an objection describing the system as 'a fire alarm with a plot'. The dome still stands in Munich, warehousing beer, which audiences of the 1970s would agree is a better use of immersion.</p>",
+      "image": "artifact-panorama-dome"
+    },
+    {
+      "key": "garden-city-elevator",
+      "title": "The Garden City Elevator (1909)",
+      "alias": "the-garden-city-elevator",
+      "category": "architecture",
+      "year": "1909",
+      "inventor": "Metropolitan Elevated Homes Co.",
+      "origin": "London, United Kingdom",
+      "ref": "MUF/1909/011",
+      "summary": "An apartment block raised 300 feet on four steel legs, freeing the ground beneath for gardens, promenades, and an uninterrupted supply of wind.",
+      "abandoned": "The lift ropes of 1909 could not be persuaded; the wind could; and the Metropolitan Borough of Stepney objected to a building that would, in its words, 'come down on the lodgers'. The sole leg survives as a water tower in Walthamstow.",
+      "body": "<p>The Garden City movement asked for light, air and greenery; the Metropolitan Elevated Homes Company asked why the people could not simply live above everything. Their 1909 proposal raised a 300-foot block of flats on four steel legs, leaving the ground floor — all of it — as a public garden. The illustration shows children playing beneath the building, apparently untroubled by the several thousand tonnes above them.</p><p>Enthusiasm was genuine and brief. The company's own consulting engineer, in a letter held by the archive, praised the legs and declined to certify them 'in any wind exceeding a remark'. The borough council's refusal, delivered after nineteen months of deliberation, remains a model of the genre.</p><p>The museum displays the 1:48 presentation model, whose optimistic paintwork has outlasted the confidence of everyone involved. The surviving leg, in Walthamstow, is listed Grade II and carries water to this day — the only occupant of the scheme that never missed a rent payment.</p>",
+      "image": "artifact-garden-city-elevator"
+    },
+    {
+      "key": "vacuum-mall",
+      "title": "The Subatlantic Vacuum Mall (1986)",
+      "alias": "the-subatlantic-vacuum-mall",
+      "category": "architecture",
+      "year": "1986",
+      "inventor": "Helioceanic Transit Authority",
+      "origin": "Boston, United States",
+      "ref": "MUF/1986/121",
+      "summary": "A subterranean pedestrian mall running in a vacuum tube beneath the Atlantic, connecting Boston to Lisbon with duty-free and, in the renderings, dolphins.",
+      "abandoned": "After four years of promotion, the anchor tenant list stood at one: a waffle kiosk. The Authority's response — 'waffles travel well' — is preserved in the archive and, the curators concede, difficult to argue with.",
+      "body": "<p>The Helioceanic Transit Authority announced itself in 1986 with a rendering of a glass-walled promenade beneath the Atlantic, along which shoppers would stroll between continents while dolphins looked on. The accompanying engineering summary established that the tube would be evacuated 'for speed and window clarity', both of which the dolphins were expected to appreciate.</p><p>The scheme is generally catalogued beside its ancestor, the 1895 Pneumatic Railway, in the museum's wing of inherited optimisms. Its distinguishing feature was commercial: the tunnel would pay for itself through retail, on the model of an airport concourse, extended by 4,800 kilometres and submerged.</p><p>The museum holds the full anchor-tenant prospectus, including the sole signed commitment — Waffle Haven of Revere, Massachusetts — and the Authority's final press release, which describes the project as 'paused pending continental demand'. Waffle Haven closed in 1994. The waffles, a spokesperson confirmed, had travelled well.</p>",
+      "image": "artifact-vacuum-mall"
+    }
+  ]
+}

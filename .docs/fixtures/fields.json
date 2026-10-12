@@ -1,0 +1,121 @@
+{
+  "groups": [
+    {
+      "key": "artifact-record",
+      "title": "Artifact Record",
+      "description": "Structured metadata for permanent-collection artifacts.",
+      "fields": [
+        {
+          "key": "artifact-year",
+          "title": "Conception Year",
+          "type": "text",
+          "filter": "INT",
+          "required": true,
+          "hint": "The year the invention was first proposed, e.g. 1958."
+        },
+        {
+          "key": "artifact-inventor",
+          "title": "Inventor / Organisation",
+          "type": "text",
+          "required": true,
+          "hint": "Person or organisation credited with the proposal."
+        },
+        {
+          "key": "artifact-origin",
+          "title": "Place of Origin",
+          "type": "text",
+          "required": true,
+          "hint": "City and country where the proposal originated."
+        },
+        {
+          "key": "artifact-ref",
+          "title": "Archival Reference",
+          "type": "text",
+          "required": true,
+          "hint": "MUF register number, e.g. MUF/1958/017."
+        },
+        {
+          "key": "artifact-summary",
+          "title": "Short Summary",
+          "type": "textarea",
+          "rows": 3,
+          "required": true,
+          "hint": "One or two sentences, used in listings and modules."
+        },
+        {
+          "key": "artifact-abandoned",
+          "title": "Reason Abandoned",
+          "type": "textarea",
+          "rows": 4,
+          "required": true,
+          "hint": "Why the project never came to pass, in the museum's deadpan register."
+        }
+      ]
+    },
+    {
+      "key": "exhibition-record",
+      "title": "Exhibition Record",
+      "description": "Dates and curatorial credits for temporary exhibitions.",
+      "fields": [
+        {
+          "key": "exhibition-opening",
+          "title": "Opening Date",
+          "type": "calendar",
+          "translateformat": true,
+          "showtime": false,
+          "required": true
+        },
+        {
+          "key": "exhibition-closing",
+          "title": "Closing Date",
+          "type": "calendar",
+          "translateformat": true,
+          "showtime": false,
+          "required": true
+        },
+        {
+          "key": "exhibition-venue",
+          "title": "Gallery",
+          "type": "text",
+          "required": true,
+          "hint": "e.g. Gallery One, The Planetarium Hall."
+        },
+        {
+          "key": "exhibition-curator",
+          "title": "Curator",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "event-record",
+      "title": "Event Record",
+      "description": "Scheduling details for What's On events.",
+      "fields": [
+        {
+          "key": "event-date",
+          "title": "Date and Time",
+          "type": "calendar",
+          "translateformat": true,
+          "showtime": true,
+          "required": true
+        },
+        {
+          "key": "event-venue",
+          "title": "Venue",
+          "type": "text",
+          "required": true,
+          "hint": "Room or gallery within the museum."
+        },
+        {
+          "key": "event-price",
+          "title": "Admission",
+          "type": "text",
+          "required": true,
+          "hint": "e.g. Free with admission, £5 per family."
+        }
+      ]
+    }
+  ]
+}

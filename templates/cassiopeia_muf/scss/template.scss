@@ -1,0 +1,70 @@
+// ============================================================================
+// The Museum of Unbuilt Futures — Cassiopeia child template (cassiopeia_muf)
+// Main stylesheet entry point.
+//
+// Build strategy (documented in .docs/design.md):
+//   * Bootstrap 5.3 sources come from Joomla's own vendored copy at
+//     media/vendor/bootstrap/scss (supplied with Joomla 6.1) — no second
+//     Bootstrap distribution is ever loaded.
+//   * The Cassiopeia Sass tree is vendored unmodified under this directory
+//     (from joomla-cms tag 6.1.4, build/media_source/templates/site/cassiopeia)
+//     and its blocks/mixins are reused wherever they fit the design.
+//   * The MUF palette is injected via scss/muf/_variables.scss with PLAIN
+//     Sass assignments, i.e. BEFORE Bootstrap's variables are compiled in —
+//     no post-hoc CSS overrides are used to re-theme Bootstrap.
+//   * Dark color mode is enabled ($enable-dark-mode: true) and the site
+//     renders with data-bs-theme="dark" on <html>.
+//
+// Compile with .docs/scripts/build-css.sh
+// ============================================================================
+
+// Bootstrap functions first ( Sass:map helpers used by variable layers)
+@import "functions";
+
+// Cassiopeia's own variable layer (all !default; MUF overrides below win)
+@import "tools/variables/variables";
+
+// === The Museum of Unbuilt Futures palette & tokens =========================
+@import "muf/variables";
+
+// Bootstrap defaults — everything here is !default, so the MUF values above
+// are the ones that end up in the compiled CSS.
+@import "variables";
+@import "variables-dark";
+@import "maps";
+@import "mixins";
+@import "utilities";
+
+// Cassiopeia helpers (grid/max-width functions)
+@import "tools/tools";
+
+// === Bootstrap 5.3 ===========================================================
+@import "bootstrap";
+
+// === Fonts (local, OFL-licensed; see muf/_fonts.scss for licensing) ==========
+@import "muf/fonts";
+
+// === Cassiopeia blocks reused by the child ==================================
+@import "blocks/global"; // Leave this first among blocks
+@import "blocks/alerts";
+@import "blocks/back-to-top";
+@import "blocks/form";
+@import "blocks/frontend-edit";
+@import "blocks/icons";
+@import "blocks/legacy";
+@import "blocks/modifiers";
+@import "blocks/tags";
+@import "blocks/toolbar";
+@import "blocks/utilities";
+@import "blocks/modals";
+
+// === MUF design system =======================================================
+@import "muf/root";      // CSS custom properties (palette tokens + compat)
+@import "muf/base";      // document shell, grid skeleton, gridline motifs
+@import "muf/type";      // display type, kickers, archival metadata
+@import "muf/header";    // site header, main navigation, search
+@import "muf/home";      // homepage section compositions
+@import "muf/cards";     // exhibition/event/journal cards
+@import "muf/article";   // artifact & exhibition detail, journal reading
+@import "muf/modules";   // footer, breadcrumbs, misc module chrome
+@import "muf/compat";    // last: compatibility shims & reduced-motion/print

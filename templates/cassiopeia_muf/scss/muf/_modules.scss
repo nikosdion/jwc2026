@@ -1,0 +1,179 @@
+// ============================================================================
+// MUF — site footer, breadcrumbs, and module chrome
+// ============================================================================
+
+.container-footer {
+  margin-top: clamp(2.5rem, 6vw, 5rem);
+  border-top: 1px solid var(--muf-hairline);
+  background:
+    radial-gradient(40rem 18rem at 12% 130%, rgba(54, 245, 240, .07), transparent 60%),
+    linear-gradient(var(--muf-gridline) 1px, transparent 1px),
+    linear-gradient(90deg, var(--muf-gridline) 1px, transparent 1px),
+    $muf-surface-2;
+  background-size: auto, 4rem 4rem, 4rem 4rem, auto;
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) minmax(0, 3fr);
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    padding-block: clamp(2rem, 5vw, 3.5rem);
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: 1fr;
+    }
+
+    h2, h3, h4 {
+      font-family: $muf-font-mono;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: $muf-cyan;
+      margin-bottom: .9rem;
+    }
+
+    p, li { color: $muf-muted; font-size: .92rem; }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: .35rem;
+
+      a {
+        color: shade-color($muf-ice, 10%);
+        text-decoration: none;
+
+        &:hover { color: $muf-mint; text-decoration: none; }
+      }
+    }
+
+    .footer-brand {
+      .muf-brand__name { font-size: 1.15rem; }
+      p { max-width: 26rem; margin-top: .8rem; }
+    }
+  }
+
+  .footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .75rem 2rem;
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--muf-hairline);
+    font-family: $muf-font-mono;
+    font-size: .72rem;
+    letter-spacing: .08em;
+    color: shade-color($muf-muted, 12%);
+  }
+}
+
+// Breadcrumbs — an archival "you are here" trail.
+.container-breadcrumbs {
+  padding-top: 1rem;
+
+  .mod-breadcrumbs__wrapper,
+  ol.breadcrumb {
+    margin: 0;
+    font-family: $muf-font-mono;
+    font-size: .76rem;
+    letter-spacing: .06em;
+
+    a { color: $muf-muted; text-decoration: none; }
+    a:hover { color: $muf-cyan; }
+
+    .active, [aria-current] { color: $muf-cyan; }
+
+    li + li::before {
+      color: shade-color($muf-muted, 18%);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Module chrome: Cassiopeia-style card chrome re-cast for the dark palette.
+// ---------------------------------------------------------------------------
+.card {
+  .card-header {
+    background-color: rgba($muf-ice, .04);
+    border-bottom-color: var(--muf-hairline);
+    font-family: $muf-font-mono;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: $muf-cyan;
+  }
+}
+
+// Custom module "muf-frame": bordered editorial frame with optional header.
+.muf-frame {
+  border: 1px solid var(--muf-hairline);
+  border-radius: $border-radius-lg;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: rgba($muf-surface-2, .55);
+
+  > h2, > h3, .muf-frame__title {
+    font-family: $muf-font-mono;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: $muf-cyan;
+    margin-bottom: 1rem;
+  }
+}
+
+// "muf-raw" chrome: module output used verbatim, no chrome at all.
+.muf-raw {
+  > h2, > h3 { @extend .visually-hidden; }
+}
+
+// ---------------------------------------------------------------------------
+// Artifact Spotlight module (mod_artifactspotlight)
+// ---------------------------------------------------------------------------
+.muf-spotlight {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+  }
+
+  .muf-spotlight__media {
+    display: block;
+    margin: 0;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid rgba($muf-cyan, .3);
+      border-radius: $border-radius;
+      background: $muf-surface-2;
+    }
+  }
+
+  .muf-spotlight__meta { margin-bottom: .5rem; }
+
+  .muf-spotlight__title {
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    margin-bottom: .7rem;
+
+    a { color: $muf-ice; text-decoration: none; }
+    a:hover { color: $muf-cyan; }
+  }
+
+  .muf-spotlight__summary {
+    color: shade-color($muf-ice, 10%);
+    margin-bottom: 1rem;
+  }
+}

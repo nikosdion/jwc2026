@@ -1,0 +1,225 @@
+// ============================================================================
+// MUF — article & detail pages
+// Artifact detail (with archival sidebar), exhibition detail, journal reading
+// experience, category listings.
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// Artifact detail — asymmetric composition: long-form history flows in a
+// readable measure on the left, the archival record card sits on the right.
+// Implemented by the com_content article override "muf-artifact".
+// ---------------------------------------------------------------------------
+.muf-artifact {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 1fr;
+  }
+
+  .muf-artifact__media {
+    margin: 0 0 1.6rem;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid rgba($muf-cyan, .3);
+      border-radius: $border-radius-lg;
+      background: $muf-surface-2;
+    }
+
+    figcaption {
+      margin-top: .7rem;
+    }
+  }
+
+  // The archival record — museum "label card".
+  .muf-artifact__record {
+    position: sticky;
+    top: calc(var(--muf-header-height) + 1.25rem);
+    padding: 1.5rem 1.6rem 1.7rem;
+    background:
+      linear-gradient(var(--muf-gridline) 1px, transparent 1px),
+      linear-gradient(90deg, var(--muf-gridline) 1px, transparent 1px),
+      $muf-surface-2;
+    background-size: 3rem 3rem, 3rem 3rem, auto;
+    border: 1px solid var(--muf-hairline);
+    border-radius: $border-radius-lg;
+
+    @include media-breakpoint-down(lg) {
+      position: static;
+    }
+
+    .muf-artifact__ref {
+      display: flex;
+      justify-content: space-between;
+      gap: .75rem;
+      padding-bottom: .9rem;
+      margin-bottom: 1.1rem;
+      border-bottom: 1px solid var(--muf-hairline);
+      font-family: $muf-font-mono;
+      font-size: .74rem;
+      letter-spacing: .1em;
+      color: $muf-cyan;
+    }
+
+    .muf-spec dd { font-size: .95rem; }
+
+    .muf-artifact__abandoned {
+      margin-top: 1.2rem;
+      padding: .9rem 1rem;
+      border: 1px solid rgba($muf-coral, .4);
+      border-radius: $border-radius;
+      background: rgba($muf-coral, .07);
+
+      .muf-kicker {
+        color: $muf-coral;
+        font-size: .7rem;
+        margin-bottom: .4rem;
+      }
+
+      p { margin: 0; font-size: .92rem; color: shade-color($muf-ice, 8%); }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Exhibition detail — full-bleed hero + curatorial narrative + facts.
+// Implemented by the com_content article override "muf-exhibition".
+// ---------------------------------------------------------------------------
+.muf-exhibition__hero {
+  position: relative;
+  margin: 0 0 clamp(1.5rem, 4vw, 3rem);
+
+  img {
+    display: block;
+    width: 100%;
+    max-height: 34rem;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    border-block: 1px solid var(--muf-hairline);
+    background: $muf-surface-2;
+  }
+}
+
+.muf-exhibition__dates {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .45rem .9rem;
+  border: 1px solid rgba($muf-cyan, .5);
+  border-radius: $border-radius-sm;
+  font-family: $muf-font-mono;
+  font-size: .8rem;
+  letter-spacing: .08em;
+  color: $muf-cyan;
+  margin-bottom: 1.1rem;
+
+  .muf-dot {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: $muf-cyan;
+    box-shadow: 0 0 .6rem rgba($muf-cyan, .9);
+  }
+}
+
+.muf-exhibition__facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1px;
+  margin: 2.2rem 0;
+  background: var(--muf-hairline);
+  border: 1px solid var(--muf-hairline);
+  border-radius: $border-radius;
+
+  > div {
+    padding: 1rem 1.1rem;
+    background: $muf-surface-2;
+
+    .muf-kicker { font-size: .66rem; margin-bottom: .3rem; }
+    p { margin: 0; font-size: .95rem; }
+  }
+}
+
+// Selected-artifacts strip inside an exhibition page.
+.muf-related {
+  margin-top: 2.5rem;
+
+  .muf-related__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Category listing headers (collection / journal / events blog views)
+// ---------------------------------------------------------------------------
+.muf-category-head {
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+
+  .page-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+
+    h1 { margin-bottom: .8rem; }
+  }
+
+  .category-desc {
+    max-width: 46rem;
+    color: shade-color($muf-ice, 8%);
+    font-size: 1.08rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Journal article reading page
+// ---------------------------------------------------------------------------
+.muf-journal-article {
+  .muf-journal-article__head {
+    max-width: 46rem;
+    margin-bottom: 2rem;
+
+    h1 { margin-bottom: 1rem; }
+  }
+
+  figure.muf-journal-article__image {
+    margin: 0 0 2.2rem;
+
+    img {
+      display: block;
+      width: 100%;
+      max-height: 26rem;
+      object-fit: cover;
+      border: 1px solid var(--muf-hairline);
+      border-radius: $border-radius-lg;
+      background: $muf-surface-2;
+    }
+  }
+}
+
+// Generic content images inside articles.
+.muf-article-body,
+.com-content-article__body {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Pager / page navigation
+// ---------------------------------------------------------------------------
+.com-content-article__navigation,
+.pagenavigation {
+  .pagination {
+    justify-content: space-between;
+  }
+}

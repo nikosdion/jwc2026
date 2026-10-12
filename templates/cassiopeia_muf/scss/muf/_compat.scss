@@ -1,0 +1,63 @@
+// ============================================================================
+// MUF — compatibility, motion & print (loaded last)
+// ============================================================================
+
+// Inherited Cassiopeia blocks were written for a light template; patch the
+// few rules that would otherwise fight the dark palette.
+html { background-color: $muf-navy; }
+
+body { color: $body-color; }
+
+// Cassiopeia's .grid-child default max-width (only used if a module chrome
+// emits .grid-child outside our skeleton).
+.site-grid .grid-child { max-width: none; }
+
+// ---------------------------------------------------------------------------
+// Motion: hover/micro-animation is enhancement-only. Everything below is
+// gated on prefers-reduced-motion: no-preference.
+// ---------------------------------------------------------------------------
+@media (prefers-reduced-motion: no-preference) {
+  a, .btn, .nav-link, .dropdown-item {
+    transition: color .16s ease, background-color .16s ease, border-color .16s ease;
+  }
+
+  // A slow pulse on the "now showing" dot in exhibition date ribbons.
+  .muf-exhibition__dates .muf-dot {
+    animation: muf-pulse 2.4s ease-in-out infinite;
+  }
+
+  @keyframes muf-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .35; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Print: strip the atmospheric backgrounds, keep the archival record legible.
+// ---------------------------------------------------------------------------
+@media print {
+  body {
+    background: #fff !important;
+    color: #000;
+  }
+
+  .container-header,
+  .container-footer,
+  .muf-hero,
+  .btn,
+  .nav {
+    display: none !important;
+  }
+
+  .muf-band { background: none !important; border: 0 !important; }
+  .muf-artifact__record { border: 1px solid #999; position: static; }
+}

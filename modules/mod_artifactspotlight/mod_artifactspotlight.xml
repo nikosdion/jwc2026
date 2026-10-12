@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>mod_artifactspotlight</name>
+	<author>The Museum of Unbuilt Futures</author>
+	<creationDate>2026-10</creationDate>
+	<copyright>(C) 2026 The Museum of Unbuilt Futures</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>hello@unbuiltfutures.museum</authorEmail>
+	<authorUrl>https://unbuiltfutures.museum</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_ARTIFACTSPOTLIGHT_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\ArtifactSpotlight</namespace>
+	<files>
+		<filename module="mod_artifactspotlight">mod_artifactspotlight.php</filename>
+		<folder>services</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/mod_artifactspotlight.ini</language>
+		<language tag="en-GB">en-GB/mod_artifactspotlight.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="mode"
+					type="list"
+					label="MOD_ARTIFACTSPOTLIGHT_MODE_LABEL"
+					description="MOD_ARTIFACTSPOTLIGHT_MODE_DESC"
+					default="random"
+					filter="options"
+					>
+					<option value="random">MOD_ARTIFACTSPOTLIGHT_MODE_RANDOM</option>
+					<option value="latest">MOD_ARTIFACTSPOTLIGHT_MODE_LATEST</option>
+					<option value="specific">MOD_ARTIFACTSPOTLIGHT_MODE_SPECIFIC</option>
+				</field>
+				<field
+					name="catid"
+					type="category"
+					label="MOD_ARTIFACTSPOTLIGHT_CATID_LABEL"
+					description="MOD_ARTIFACTSPOTLIGHT_CATID_DESC"
+					extension="com_content"
+					show_root="false"
+					default=""
+					filter="int"
+					/>
+				<field
+					name="article_id"
+					type="number"
+					label="MOD_ARTIFACTSPOTLIGHT_ARTICLE_LABEL"
+					description="MOD_ARTIFACTSPOTLIGHT_ARTICLE_DESC"
+					min="1"
+					default=""
+					showon="mode:specific"
+					filter="int"
+					/>
+				<field
+					name="show_readmore"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="MOD_ARTIFACTSPOTLIGHT_READMORE_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+					/>
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="1"
+					filter="cmd"
+					/>
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="0"
+					filter="integer"
+					>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+					<option value="1">COM_MODULES_FIELD_VALUE_USE_GLOBAL</option>
+				</field>
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+					/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

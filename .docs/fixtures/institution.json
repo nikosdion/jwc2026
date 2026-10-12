@@ -1,0 +1,42 @@
+{
+  "institution": {
+    "name": "The Museum of Unbuilt Futures",
+    "tagline": "Preserving the tomorrows that never happened.",
+    "founded": 1979,
+    "founder": "Dr. Aurelia Vane",
+    "address": "1 Meridian Parade, Marghaven, MB1 9UF",
+    "phone": "+44 (0)1603 555 0179",
+    "email": "hello@unbuiltfutures.museum",
+    "hours": {
+      "tuesday_wednesday_friday_saturday_sunday": "10:00 – 18:00",
+      "thursday": "10:00 – 21:00 (late opening)",
+      "monday": "Closed (open bank holidays)"
+    },
+    "admission": {
+      "adults": "£9.00",
+      "concessions": "£6.00",
+      "under_12": "Free",
+      "members": "Free",
+      "thursday_evening": "Pay what you wish, 17:00–21:00"
+    },
+    "accessibility": [
+      "Step-free access to all galleries, with lifts at the east and west staircases",
+      "Hearing loops in the Lecture Theatre and at both reception desks",
+      "Wheelchairs available to borrow from the cloakroom",
+      "Quiet Hours: first Sunday of each month, 09:00–10:00, reduced sound and lighting",
+      "Registered assistance dogs welcome in all galleries"
+    ],
+    "transport": [
+      "Marghaven Interchange is a ten-minute walk; leave via the Meridian exit",
+      "Tram line 4 stops directly outside at 'Meridian Parade'",
+      "Cycle racks at the Parade South entrance; the museum has no visitor car park",
+      "Parade South public car park is two streets away (pay and display)"
+    ],
+    "staff": [
+      {"name": "Dr. Imogen Vane", "role": "Director", "bio": "Granddaughter of the museum's founder; keeper of the mission."},
+      {"name": "Prof. Barnaby Quill", "role": "Keeper of Implausible Devices", "bio": "Specialist in domestic robotics and overpromised convenience."},
+      {"name": "Ms. Ines Krieger", "role": "Chief Archivist", "bio": "Guardian of the MUF collection register and its 40,000 index cards."},
+      {"name": "Mr. Tomas Reyes", "role": "Head of Visitor Experience", "bio": "Believes wayfinding is a moral obligation."}
+    ]
+  }
+}

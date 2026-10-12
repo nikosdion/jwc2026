@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "key": "collection",
+      "title": "The Collection",
+      "alias": "collection",
+      "description": "Fifteen hundred objects, models and documents recording humanity's most confident mistakes. The permanent collection is arranged in four wings; highlights from each are presented here.",
+      "parent": null
+    },
+    {
+      "key": "transport",
+      "title": "Transport & Exploration",
+      "alias": "transport-exploration",
+      "description": "Machines intended to move us faster, higher and further than physics, budgets or common sense would allow.",
+      "parent": "collection"
+    },
+    {
+      "key": "domestic",
+      "title": "Domestic Futures",
+      "alias": "domestic-futures",
+      "description": "Appliances and homewares that promised to abolish household labour, weather, cooking and thought itself.",
+      "parent": "collection"
+    },
+    {
+      "key": "comms",
+      "title": "Communication & Computing",
+      "alias": "communication-computing",
+      "description": "Devices for speaking, deciding and remembering at the speed of electricity — provided the electricity behaved.",
+      "parent": "collection"
+    },
+    {
+      "key": "architecture",
+      "title": "Architecture & Urbanism",
+      "alias": "architecture-urbanism",
+      "description": "Cities, towers and infrastructure designed for populations that, regrettably, had other plans.",
+      "parent": "collection"
+    },
+    {
+      "key": "exhibitions",
+      "title": "Exhibitions",
+      "alias": "exhibitions",
+      "description": "Temporary exhibitions at the Museum of Unbuilt Futures.",
+      "parent": null
+    },
+    {
+      "key": "events",
+      "title": "What's On",
+      "alias": "whats-on",
+      "description": "Tours, lectures, workshops, screenings and after-hours events at the museum.",
+      "parent": null
+    },
+    {
+      "key": "journal",
+      "title": "Museum Journal",
+      "alias": "journal",
+      "description": "Essays and field notes from the curators, archivists and conservators of the Museum of Unbuilt Futures.",
+      "parent": null
+    }
+  ]
+}

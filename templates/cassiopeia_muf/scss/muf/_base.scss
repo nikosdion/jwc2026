@@ -1,0 +1,192 @@
+// ============================================================================
+// MUF — document base & page shell
+// Deep-space page background with a faint technical grid, full-height flex
+// column layout, and the site's grid-area skeleton for module positions.
+// ============================================================================
+
+html {
+  // Bootstrap's body-bg applies to <body>; keeping <html> on the darkest
+  // token avoids white flashes while the stylesheet streams in.
+  background-color: $muf-navy;
+  color-scheme: dark;
+}
+
+body {
+  // Faint archival gridlines over the deep space navy, plus a soft radial
+  // vignette so the centre of the viewport reads as "gallery floor".
+  background-color: $muf-navy;
+  background-image:
+    radial-gradient(60rem 30rem at 50% -8rem, rgba(167, 123, 255, .10), transparent 65%),
+    radial-gradient(48rem 26rem at 88% 6rem, rgba(54, 245, 240, .06), transparent 60%),
+    linear-gradient(var(--muf-gridline) 1px, transparent 1px),
+    linear-gradient(90deg, var(--muf-gridline) 1px, transparent 1px);
+  background-size: auto, auto, 4rem 4rem, 4rem 4rem;
+  color: $body-color;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  // Main column grows so the footer stays down on short pages.
+  > .site-grid {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
+::selection {
+  background: rgba($muf-cyan, .28);
+  color: $muf-ice;
+}
+
+// ----------------------------------------------------------------------------
+// Grid skeleton — the child template's index.php maps module positions into
+// these areas. Intelligible position names per .docs/design.md.
+// ----------------------------------------------------------------------------
+.site-grid {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, var(--muf-max-width)) [main-end] minmax(1rem, 1fr) [full-end];
+  grid-template-areas:
+    ". banner banner ."
+    ". main main ."
+    ". bot-a bot-a .";
+  column-gap: 0;
+  row-gap: clamp(1.5rem, 4vw, 4rem);
+
+  > .full-width {
+    grid-column: full-start / full-end;
+  }
+
+  > .grid-child {
+    width: 100%;
+  }
+}
+
+.site-grid > .container-banner   { grid-area: banner; }
+.site-grid > .container-main     { grid-area: main; }
+.site-grid > .container-bottom-a { grid-area: bot-a; }
+
+// With a right sidebar published (e.g. Plan Your Visit), carve a side column
+// out of the main track at desktop widths; stack it below the content on
+// smaller screens.
+.has-sidebar-right .site-grid {
+  @include media-breakpoint-up(lg) {
+    grid-template-columns:
+      [full-start] minmax(1rem, 1fr)
+      [main-start] minmax(0, calc(var(--muf-max-width) - 21rem))
+      [main-end side-start] minmax(14rem, 21rem) [side-end]
+      minmax(1rem, 1fr) [full-end];
+    grid-template-areas:
+      ". banner banner ."
+      ". main side-r ."
+      ". bot-a bot-a .";
+  }
+}
+
+.site-grid > .container-sidebar-right {
+  grid-area: side-r;
+  align-self: start;
+  position: sticky;
+  top: calc(var(--muf-header-height) + 1.25rem);
+  display: grid;
+  gap: 1.25rem;
+
+  @include media-breakpoint-down(lg) {
+    position: static;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Homepage section shells. Each homepage band is its own full-width grid row
+// (see index.php): .muf-band provides the shared rhythm, individual modifiers
+// supply the art direction.
+// ---------------------------------------------------------------------------
+.muf-band {
+  grid-column: full-start / full-end;
+  padding-block: clamp(2.5rem, 6vw, 5.5rem);
+  position: relative;
+
+  // Sections sit on alternating base surfaces to break the page into
+  // readable "galleries" without resorting to heavy boxes.
+  &.muf-band--raised {
+    background-color: rgba($muf-surface-2, .55);
+    background-image:
+      linear-gradient(var(--muf-gridline) 1px, transparent 1px),
+      linear-gradient(90deg, var(--muf-gridline) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    border-block: 1px solid var(--muf-hairline);
+  }
+
+  &.muf-band--feature {
+    background:
+      radial-gradient(50rem 28rem at 18% 0%, rgba(255, 79, 216, .10), transparent 60%),
+      radial-gradient(46rem 26rem at 85% 110%, rgba(54, 245, 240, .09), transparent 55%),
+      rgba($muf-surface-2, .4);
+    border-block: 1px solid var(--muf-hairline);
+  }
+}
+
+// Inner wrapper aligning section content to the main column.
+.muf-band__inner {
+  width: min(100% - 2rem, var(--muf-max-width));
+  margin-inline: auto;
+}
+
+// Section header pattern: kicker (mono, cyan) over a display heading, with an
+// optional archival index number on the right — the museum's "gallery label".
+.muf-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: .5rem 1rem;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+
+  @include media-breakpoint-down(md) {
+    .muf-section-head__index { display: none; }
+  }
+
+  .muf-section-head__index {
+    font-family: $muf-font-mono;
+    font-size: .8rem;
+    color: $muf-muted;
+    letter-spacing: .12em;
+    white-space: nowrap;
+    padding-bottom: .5em;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2.4em;
+      height: 1px;
+      background: var(--muf-gridline-strong);
+      vertical-align: middle;
+      margin-right: .8em;
+    }
+  }
+}
+
+// Technical gridline separator used between stacked sections.
+.muf-rule {
+  border: 0;
+  height: 1px;
+  margin: 0;
+  background: linear-gradient(90deg, transparent, var(--muf-gridline-strong), transparent);
+}
+
+// Skip link (accessibility) — visible on focus.
+.sr-only-focusable:focus-visible {
+  position: fixed;
+  top: .75rem;
+  left: .75rem;
+  z-index: 10000;
+  padding: .6rem 1rem;
+  background: $muf-surface-3;
+  color: $muf-cyan;
+  border: 1px solid $muf-cyan;
+  border-radius: $border-radius;
+}
+
+// Narrow-viewport safety: no page-level horizontal scrolling from any
+// single oversized ornament; sections keep their own internal wrapping.
+html, body {
+  overflow-x: clip;
+}

@@ -1,0 +1,573 @@
+{
+    "meta": {
+        "model": "flux-2-pro",
+        "prefix": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background",
+        "suffix": "No readable text, no labels",
+        "outputDir": "images/muf",
+        "baseUrlDefault": "https://api.bfl.ai",
+        "note": "Subject descriptions only; generate-images.php wraps them with the fixed prefix/suffix. Provenance (seed, generatedAt, file) is written back per image."
+    },
+    "images": [
+        {
+            "id": "exhibition-tomorrow-cancelled",
+            "file": "exhibition-tomorrow-cancelled.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Homepage hero; Tomorrow, Cancelled exhibition hero",
+            "subject": "An extravagant 1958 family automobile with a compact cylindrical atomic reactor beneath a transparent rear canopy, displayed on a museum plinth under a single spotlight, three-quarter view, precision technical-model aesthetics, dramatic museum-object composition, faint grid floor",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background An extravagant 1958 family automobile with a compact cylindrical atomic reactor beneath a transparent rear canopy, displayed on a museum plinth under a single spotlight, three-quarter view, precision technical-model aesthetics, dramatic museum-object composition, faint grid floor No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 1772167971,
+                "generatedAt": "2026-10-12T22:54:58+03:00",
+                "file": "exhibition-tomorrow-cancelled.jpg"
+            }
+        },
+        {
+            "id": "exhibition-house-of-future",
+            "file": "exhibition-house-of-future.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "The House of the Future exhibition hero and card",
+            "subject": "A 1960s push-button dream kitchen with a robot arm serving a tray, round porthole windows, domed appliances and a curved breakfast bar, everything rendered as glowing wireframe contours, playful mid-century optimism",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1960s push-button dream kitchen with a robot arm serving a tray, round porthole windows, domed appliances and a curved breakfast bar, everything rendered as glowing wireframe contours, playful mid-century optimism No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 1719851739,
+                "generatedAt": "2026-10-12T22:55:08+03:00",
+                "file": "exhibition-house-of-future.jpg"
+            }
+        },
+        {
+            "id": "exhibition-cities-in-sky",
+            "file": "exhibition-cities-in-sky.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Cities in the Sky exhibition hero and card",
+            "subject": "A kilometre-high arcology spire with stacked garden terraces and hanging pod homes, tiny aircraft circling its summit, a second smaller tower raised on four colossal legs connected by skybridges, monumental vertical city composition",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A kilometre-high arcology spire with stacked garden terraces and hanging pod homes, tiny aircraft circling its summit, a second smaller tower raised on four colossal legs connected by skybridges, monumental vertical city composition No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 3669809220,
+                "generatedAt": "2026-10-12T22:55:21+03:00",
+                "file": "exhibition-cities-in-sky.jpg"
+            }
+        },
+        {
+            "id": "artifact-nuclear-automobile",
+            "file": "artifact-nuclear-automobile.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Personal Nuclear Automobile",
+            "subject": "A chrome-bumpered 1950s family sedan with a glowing cylindrical reactor visible under a glass dome where the rear seat should be, tail fins, whitewall tyres rendered as delicate wire hoops, three-quarter museum object view",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A chrome-bumpered 1950s family sedan with a glowing cylindrical reactor visible under a glass dome where the rear seat should be, tail fins, whitewall tyres rendered as delicate wire hoops, three-quarter museum object view No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 4139472836,
+                "generatedAt": "2026-10-12T22:55:33+03:00",
+                "file": "artifact-nuclear-automobile.jpg"
+            }
+        },
+        {
+            "id": "artifact-pneumatic-railway",
+            "file": "artifact-pneumatic-railway.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Transatlantic Pneumatic Railway",
+            "subject": "A cutaway view of a luxurious railway carriage with armchairs and reading lamps inside a giant transparent vacuum tube, the tube diving beneath a stylised ocean with depth lines, Victorian engineering elegance",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A cutaway view of a luxurious railway carriage with armchairs and reading lamps inside a giant transparent vacuum tube, the tube diving beneath a stylised ocean with depth lines, Victorian engineering elegance No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 405106398,
+                "generatedAt": "2026-10-12T22:55:43+03:00",
+                "file": "artifact-pneumatic-railway.jpg"
+            }
+        },
+        {
+            "id": "artifact-servo-valet",
+            "file": "artifact-servo-valet.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Servo-Valet 3000",
+            "subject": "A boxy 1980s domestic robot butler with visible hydraulic pistons at every joint, holding a silver tray with a champagne bottle, bow-tie detail, slightly apologetic posture, standing in a stylised hallway",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A boxy 1980s domestic robot butler with visible hydraulic pistons at every joint, holding a silver tray with a champagne bottle, bow-tie detail, slightly apologetic posture, standing in a stylised hallway No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 904742560,
+                "generatedAt": "2026-10-12T22:55:54+03:00",
+                "file": "artifact-servo-valet.jpg"
+            }
+        },
+        {
+            "id": "artifact-weather-controller",
+            "file": "artifact-weather-controller.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Home Weather Controller",
+            "subject": "A six-foot-tall retro appliance with a ring of ionising emitter rods on top, standing in a suburban garden under a small localised dome of sunshine while everything beyond a fence line shows rain clouds, humorous meteorological contrast",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A six-foot-tall retro appliance with a ring of ionising emitter rods on top, standing in a suburban garden under a small localised dome of sunshine while everything beyond a fence line shows rain clouds, humorous meteorological contrast No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 3744923866,
+                "generatedAt": "2026-10-12T22:56:29+03:00",
+                "file": "artifact-weather-controller.jpg"
+            }
+        },
+        {
+            "id": "artifact-pocket-parliament",
+            "file": "artifact-pocket-parliament.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Pocket Parliament",
+            "subject": "A chunky early-1980s handheld electronic device with a tiny LCD screen showing abstract bar-charts, rows of serious buttons and a small brass speaker grille, styled like a pocket calculator crossed with a law book, levitating slightly as if mid-speech",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A chunky early-1980s handheld electronic device with a tiny LCD screen showing abstract bar-charts, rows of serious buttons and a small brass speaker grille, styled like a pocket calculator crossed with a law book, levitating slightly as if mid-speech No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 1141943461,
+                "generatedAt": "2026-10-12T22:56:40+03:00",
+                "file": "artifact-pocket-parliament.jpg"
+            }
+        },
+        {
+            "id": "artifact-lunar-postal",
+            "file": "artifact-lunar-postal.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Lunar Postal Service",
+            "subject": "A 1950s rocket mail courier with fins and portholes docking at a small moon post office dome, a trail of envelopes floating in an arc from Earth to the Moon like an orbital path, stamp-like composition, optimistic space-age mail delivery",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1950s rocket mail courier with fins and portholes docking at a small moon post office dome, a trail of envelopes floating in an arc from Earth to the Moon like an orbital path, stamp-like composition, optimistic space-age mail delivery No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 1550414564,
+                "generatedAt": "2026-10-12T22:56:51+03:00",
+                "file": "artifact-lunar-postal.jpg"
+            }
+        },
+        {
+            "id": "artifact-stratoliner",
+            "file": "artifact-stratoliner.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Stratoliner Meridian",
+            "subject": "A six-engined 1950s stratospheric airliner with a panoramic glass observation dome on top where formally dressed passengers stand at a cocktail bar, flying above a violet stratosphere with stars beginning to appear",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A six-engined 1950s stratospheric airliner with a panoramic glass observation dome on top where formally dressed passengers stand at a cocktail bar, flying above a violet stratosphere with stars beginning to appear No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 3310402048,
+                "generatedAt": "2026-10-12T22:57:02+03:00",
+                "file": "artifact-stratoliner.jpg"
+            }
+        },
+        {
+            "id": "artifact-videophone",
+            "file": "artifact-videophone.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Videophone Modèle 68",
+            "subject": "A 1968 tabletop videophone with a small circular cathode-ray screen showing an abstract friendly silhouette, a physical shutter half-covering the camera lens, rotary dial, sculpted plastic elegance, sitting on a sideboard",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1968 tabletop videophone with a small circular cathode-ray screen showing an abstract friendly silhouette, a physical shutter half-covering the camera lens, rotary dial, sculpted plastic elegance, sitting on a sideboard No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 4238862493,
+                "generatedAt": "2026-10-12T22:57:15+03:00",
+                "file": "artifact-videophone.jpg"
+            }
+        },
+        {
+            "id": "artifact-olfax",
+            "file": "artifact-olfax.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Olfax Scent Telegraph",
+            "subject": "A 1960s Parisian desk console with sixty-four small scent cartridges arranged like an organ keyboard, a handset and aroma wisp-lines rising from an open compartment, boulevard atmosphere, chic and faintly ridiculous",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1960s Parisian desk console with sixty-four small scent cartridges arranged like an organ keyboard, a handset and aroma wisp-lines rising from an open compartment, boulevard atmosphere, chic and faintly ridiculous No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 3395435206,
+                "generatedAt": "2026-10-12T22:52:04+03:00",
+                "file": "artifact-olfax.jpg"
+            }
+        },
+        {
+            "id": "artifact-cognition-armchair",
+            "file": "artifact-cognition-armchair.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Cognition Armchair Mk II",
+            "subject": "A 1970s wingback armchair with a newspaper feeding into one arm, a calm glowing sensor eye on the headrest and a small dial marked with abstract symbols on the other arm, surrounded by a halo of faint concentric thinking-lines, deep comfy geometry",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1970s wingback armchair with a newspaper feeding into one arm, a calm glowing sensor eye on the headrest and a small dial marked with abstract symbols on the other arm, surrounded by a halo of faint concentric thinking-lines, deep comfy geometry No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 654488896,
+                "generatedAt": "2026-10-12T22:57:26+03:00",
+                "file": "artifact-cognition-armchair.jpg"
+            }
+        },
+        {
+            "id": "artifact-aerosol-dinner",
+            "file": "artifact-aerosol-dinner.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Aerosol Dinner Programme",
+            "subject": "A 1971 kitchen console with four flavour chambers and a torch-like handset spraying a fine mist over a dining table, the roast dinner rendered as floating wireframe particles above the plates, playful culinary chemistry",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1971 kitchen console with four flavour chambers and a torch-like handset spraying a fine mist over a dining table, the roast dinner rendered as floating wireframe particles above the plates, playful culinary chemistry No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 1715533824,
+                "generatedAt": "2026-10-12T22:58:00+03:00",
+                "file": "artifact-aerosol-dinner.jpg"
+            }
+        },
+        {
+            "id": "artifact-arcology-spire",
+            "file": "artifact-arcology-spire.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Arcology Spire Heliopolis One",
+            "subject": "A single kilometre-high self-contained city tower with visible internal sections, hydroponic farms on sunward terraces, a school ring, hanging gardens and a weather-control crown, heroic upward perspective, 1969 utopian drafting style",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A single kilometre-high self-contained city tower with visible internal sections, hydroponic farms on sunward terraces, a school ring, hanging gardens and a weather-control crown, heroic upward perspective, 1969 utopian drafting style No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 422185466,
+                "generatedAt": "2026-10-12T22:58:13+03:00",
+                "file": "artifact-arcology-spire.jpg"
+            }
+        },
+        {
+            "id": "artifact-panorama-dome",
+            "file": "artifact-panorama-dome.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Panorama Dome Theatre",
+            "subject": "A 1977 cinema dome with nine projector beams converging inside the hemisphere, circular rows of horizon-stabilised seats, an audience rendered as simple glowing figures watching a film that wraps around the entire room, immersive optical spectacle",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1977 cinema dome with nine projector beams converging inside the hemisphere, circular rows of horizon-stabilised seats, an audience rendered as simple glowing figures watching a film that wraps around the entire room, immersive optical spectacle No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 2285405665,
+                "generatedAt": "2026-10-12T22:58:25+03:00",
+                "file": "artifact-panorama-dome.jpg"
+            }
+        },
+        {
+            "id": "artifact-garden-city-elevator",
+            "file": "artifact-garden-city-elevator.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Garden City Elevator",
+            "subject": "A 1909 apartment block raised 300 feet into the air on four slender riveted steel legs, with children playing in the public garden directly beneath the suspended building, Edwardian hats and kites, a water tower on one leg",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1909 apartment block raised 300 feet into the air on four slender riveted steel legs, with children playing in the public garden directly beneath the suspended building, Edwardian hats and kites, a water tower on one leg No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 1517113588,
+                "generatedAt": "2026-10-12T22:58:37+03:00",
+                "file": "artifact-garden-city-elevator.jpg"
+            }
+        },
+        {
+            "id": "artifact-vacuum-mall",
+            "file": "artifact-vacuum-mall.jpg",
+            "width": 1080,
+            "height": 1080,
+            "usage": "Artifact: Subatlantic Vacuum Mall",
+            "subject": "A glass-walled underground pedestrian shopping promenade on the seabed between two continents, shoppers strolling with bags past glowing storefronts while dolphins peer through the glass, one waffle kiosk glowing brighter than the rest",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A glass-walled underground pedestrian shopping promenade on the seabed between two continents, shoppers strolling with bags past glowing storefronts while dolphins peer through the glass, one waffle kiosk glowing brighter than the rest No readable text, no labels",
+                "width": 1080,
+                "height": 1080,
+                "seed": 1778178194,
+                "generatedAt": "2026-10-12T22:58:50+03:00",
+                "file": "artifact-vacuum-mall.jpg"
+            }
+        },
+        {
+            "id": "collection-overview",
+            "file": "collection-overview.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Section backdrop: collection overview motif (optional)",
+            "subject": "A vast dark gallery hall where a grid of fifteen glowing wireframe museum objects floats at different heights, connected by thin archive lines and small catalogue nodes, receding into perspective like a constellation of inventions",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A vast dark gallery hall where a grid of fifteen glowing wireframe museum objects floats at different heights, connected by thin archive lines and small catalogue nodes, receding into perspective like a constellation of inventions No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 2318681802,
+                "generatedAt": "2026-10-12T22:59:01+03:00",
+                "file": "collection-overview.jpg"
+            }
+        },
+        {
+            "id": "museum-building",
+            "file": "museum-building.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Plan Your Visit / About page hero",
+            "subject": "A decommissioned planetarium building from 1979 converted into a museum, its great dome glowing with cyan wireframe lines at night, a small queue of visitors at the entrance, tram lines passing in front, dignified municipal architecture",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A decommissioned planetarium building from 1979 converted into a museum, its great dome glowing with cyan wireframe lines at night, a small queue of visitors at the entrance, tram lines passing in front, dignified municipal architecture No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 1846636703,
+                "generatedAt": "2026-10-12T22:59:35+03:00",
+                "file": "museum-building.jpg"
+            }
+        },
+        {
+            "id": "curator-lab",
+            "file": "curator-lab.jpg",
+            "width": 1080,
+            "height": 1350,
+            "usage": "Homepage Curator's Pick module",
+            "subject": "A restoration laboratory where a conservator's workbench holds a half-finished glowing wireframe reconstruction of a vintage robot, calipers and blueprint sheets scattered around, warm desk lamp light against the dark laboratory, vertical composition",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A restoration laboratory where a conservator's workbench holds a half-finished glowing wireframe reconstruction of a vintage robot, calipers and blueprint sheets scattered around, warm desk lamp light against the dark laboratory, vertical composition No readable text, no labels",
+                "width": 1080,
+                "height": 1350,
+                "seed": 1727518012,
+                "generatedAt": "2026-10-12T22:59:48+03:00",
+                "file": "curator-lab.jpg"
+            }
+        },
+        {
+            "id": "journal-flying-car",
+            "file": "journal-flying-car.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Journal: flying car essay",
+            "subject": "A 1960s family car with folded wings parked on a suburban lawn, a rooftop landing pad on the garage behind, hovering slightly with soft landing gear light, dreamy commuter-utopia atmosphere",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1960s family car with folded wings parked on a suburban lawn, a rooftop landing pad on the garage behind, hovering slightly with soft landing gear light, dreamy commuter-utopia atmosphere No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 60631271,
+                "generatedAt": "2026-10-12T23:00:00+03:00",
+                "file": "journal-flying-car.jpg"
+            }
+        },
+        {
+            "id": "journal-robot-butler",
+            "file": "journal-robot-butler.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Journal: robot butlers essay",
+            "subject": "A parade of domestic robot butlers from the 1920s to the 1980s drawn in evolving wireframe styles, from a silver cylinder to a boxy servant with a tray, marching up a stylised staircase, gentle generational progression",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A parade of domestic robot butlers from the 1920s to the 1980s drawn in evolving wireframe styles, from a silver cylinder to a boxy servant with a tray, marching up a stylised staircase, gentle generational progression No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 539563902,
+                "generatedAt": "2026-10-12T23:00:10+03:00",
+                "file": "journal-robot-butler.jpg"
+            }
+        },
+        {
+            "id": "journal-chrome",
+            "file": "journal-chrome.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Journal: chrome tomorrow essay",
+            "subject": "A 1960s world's-fair exhibition hall with sweeping chrome tail-fin vehicles and a giant polished dome reflecting impossible cityscapes, crowds of simple glowing figures, mid-century fairground optimism",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A 1960s world's-fair exhibition hall with sweeping chrome tail-fin vehicles and a giant polished dome reflecting impossible cityscapes, crowds of simple glowing figures, mid-century fairground optimism No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 2930201995,
+                "generatedAt": "2026-10-12T23:00:23+03:00",
+                "file": "journal-chrome.jpg"
+            }
+        },
+        {
+            "id": "journal-prediction",
+            "file": "journal-prediction.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Journal: lost art of predicting",
+            "subject": "An orrery-like forecasting engine from 1926 with brass rings, orbiting dials, chart rolls and an abacus, a single confident arrow pointing into an empty future space, vintage scientific-instrument gravitas",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background An orrery-like forecasting engine from 1926 with brass rings, orbiting dials, chart rolls and an abacus, a single confident arrow pointing into an empty future space, vintage scientific-instrument gravitas No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 1987634465,
+                "generatedAt": "2026-10-12T23:00:37+03:00",
+                "file": "journal-prediction.jpg"
+            }
+        },
+        {
+            "id": "journal-restoration",
+            "file": "journal-restoration.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Journal: restoration laboratory notes",
+            "subject": "A conservator's gloved hands (rendered as elegant wireframe) adjusting a floating wireframe radio valve under a magnifying lamp, tools hanging in the dark above the bench, careful archival craftsmanship",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A conservator's gloved hands (rendered as elegant wireframe) adjusting a floating wireframe radio valve under a magnifying lamp, tools hanging in the dark above the bench, careful archival craftsmanship No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 3780141560,
+                "generatedAt": "2026-10-12T23:01:18+03:00",
+                "file": "journal-restoration.jpg"
+            }
+        },
+        {
+            "id": "journal-defence",
+            "file": "journal-defence.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Journal: in defence of tomorrow",
+            "subject": "A single glowing blueprint unrolling across a dark gallery floor, its lines rising into the air as a luminous unbuilt tower, one small human figure standing before it in quiet admiration, monumental yet tender",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A single glowing blueprint unrolling across a dark gallery floor, its lines rising into the air as a luminous unbuilt tower, one small human figure standing before it in quiet admiration, monumental yet tender No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 585216793,
+                "generatedAt": "2026-10-12T23:01:29+03:00",
+                "file": "journal-defence.jpg"
+            }
+        },
+        {
+            "id": "event-curator-tour",
+            "file": "event-curator-tour.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Event: curator's tour (reuse pool)",
+            "subject": "A curator gesturing toward a glowing wireframe atomic automobile on a plinth while a small semicircle of visitors listens, gallery spotlights, museum education atmosphere",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A curator gesturing toward a glowing wireframe atomic automobile on a plinth while a small semicircle of visitors listens, gallery spotlights, museum education atmosphere No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 3842323577,
+                "generatedAt": "2026-10-12T23:01:39+03:00",
+                "file": "event-curator-tour.jpg"
+            }
+        },
+        {
+            "id": "event-lecture",
+            "file": "event-lecture.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Event: lecture (reuse pool)",
+            "subject": "A small lecture theatre with a speaker at a podium and an enormous holographic wireframe graph of rising and collapsing predictions behind them, attentive glowing audience silhouettes",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A small lecture theatre with a speaker at a podium and an enormous holographic wireframe graph of rising and collapsing predictions behind them, attentive glowing audience silhouettes No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 62216149,
+                "generatedAt": "2026-10-12T23:01:49+03:00",
+                "file": "event-lecture.jpg"
+            }
+        },
+        {
+            "id": "event-workshop",
+            "file": "event-workshop.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Event: family workshop (reuse pool)",
+            "subject": "Children and adults around a making table building cardboard and string machines that glow as half-finished wireframe contraptions, scissors and tape everywhere, joyful inventive chaos",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background Children and adults around a making table building cardboard and string machines that glow as half-finished wireframe contraptions, scissors and tape everywhere, joyful inventive chaos No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 3904233139,
+                "generatedAt": "2026-10-12T23:02:02+03:00",
+                "file": "event-workshop.jpg"
+            }
+        },
+        {
+            "id": "event-film-night",
+            "file": "event-film-night.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Event: film night (reuse pool)",
+            "subject": "A domed screening room with concentric circular seat rows and a 360-degree film wrapping around the entire interior wall, projector beams crossing the space, retro cinema nocturne",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A domed screening room with concentric circular seat rows and a 360-degree film wrapping around the entire interior wall, projector beams crossing the space, retro cinema nocturne No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 4136575225,
+                "generatedAt": "2026-10-12T23:02:35+03:00",
+                "file": "event-film-night.jpg"
+            }
+        },
+        {
+            "id": "event-after-hours",
+            "file": "event-after-hours.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Event: after hours / Neon Nocturne (reuse pool)",
+            "subject": "A museum gallery at night with all exhibits glowing at full neon intensity, a small bar with gin-mist glasses in the corner, a synthesiser duo rendered as luminous wireframes, nocturnal party atmosphere",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background A museum gallery at night with all exhibits glowing at full neon intensity, a small bar with gin-mist glasses in the corner, a synthesiser duo rendered as luminous wireframes, nocturnal party atmosphere No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 783876037,
+                "generatedAt": "2026-10-12T23:02:46+03:00",
+                "file": "event-after-hours.jpg"
+            }
+        },
+        {
+            "id": "event-conservation",
+            "file": "event-conservation.jpg",
+            "width": 1440,
+            "height": 810,
+            "usage": "Event: conservation open studio (reuse pool)",
+            "subject": "An open conservation studio viewed through a large window, conservators at benches assembling glowing wireframe objects, visitors watching from the gallery side, behind-the-glass craftsmanship",
+            "provenance": {
+                "model": "flux-2-pro",
+                "prompt": "1980s wireframe 3D rendering, neon wireframe colors, soft shadowing, dark background An open conservation studio viewed through a large window, conservators at benches assembling glowing wireframe objects, visitors watching from the gallery side, behind-the-glass craftsmanship No readable text, no labels",
+                "width": 1440,
+                "height": 810,
+                "seed": 654744205,
+                "generatedAt": "2026-10-12T23:02:58+03:00",
+                "file": "event-conservation.jpg"
+            }
+        }
+    ]
+}

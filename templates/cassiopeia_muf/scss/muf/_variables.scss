@@ -1,0 +1,299 @@
+// ============================================================================
+// The Museum of Unbuilt Futures — palette & design tokens
+// These are PLAIN Sass assignments (no !default): they win over both the
+// Cassiopeia variable layer (tools/variables) and Bootstrap's own defaults,
+// which are loaded after this file by the entry point (template.scss).
+// See .docs/design.md for the canonical palette table.
+// ============================================================================
+
+
+// --- Dark color mode --------------------------------------------------------
+// The museum is a dark-first site; html carries data-bs-theme="dark".
+$enable-dark-mode: true;
+$color-mode-type: data;
+
+// --- Exact palette (kickoff §3) ---------------------------------------------
+$muf-cyan:    #36F5F0; // primary   — electric cyan
+$muf-violet:  #A77BFF; // secondary — arcade violet
+$muf-mint:    #65FBD2; // success   — neon mint
+$muf-coral:   #FF5C75; // danger    — hot coral
+$muf-amber:   #FFB454; // warning   — synthwave amber
+$muf-magenta: #FF4FD8; // info      — laser magenta
+$muf-ice:     #E7F4FF; // light     — phosphor white
+$muf-navy:    #090B1A; // dark      — deep space navy
+
+$muf-surface-2:  #13172B; // secondary surfaces
+$muf-surface-3:  #201832; // raised surfaces
+$muf-muted:      #9AA8C7; // muted text
+$muf-border:     #343052; // borders
+
+// Bootstrap semantic colors — exact tokens from the brief
+$primary:   $muf-cyan;
+$secondary: $muf-violet;
+$success:   $muf-mint;
+$danger:    $muf-coral;
+$warning:   $muf-amber;
+$info:      $muf-magenta;
+$light:     $muf-ice;
+$dark:      $muf-navy;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+);
+
+// --- Body / surfaces ---------------------------------------------------------
+$body-bg:        $muf-navy;
+$body-color:     $muf-ice;
+$body-bg-dark:   $muf-navy;
+$body-color-dark:$muf-ice;
+$body-secondary-bg:      $muf-surface-2;
+$body-secondary-bg-dark: $muf-surface-2;
+$body-tertiary-bg:       $muf-surface-3;
+$body-tertiary-bg-dark:  $muf-surface-3;
+$body-secondary-color:   $muf-muted;
+$body-secondary-color-dark: $muf-muted;
+$body-tertiary-color:    shade-color($muf-muted, 15%);
+$body-tertiary-color-dark: shade-color($muf-muted, 15%);
+
+$border-color:      $muf-border;
+$border-color-dark: $muf-border;
+$text-muted:        $muf-muted;
+$text-muted-dark:   $muf-muted;
+
+// --- Links -------------------------------------------------------------------
+$link-color:            $muf-cyan;
+$link-hover-color:      $muf-mint;
+$link-color-dark:       $muf-cyan;
+$link-hover-color-dark: $muf-mint;
+$link-decoration:       none;
+$link-hover-decoration: underline;
+$link-underline-opacity:       .45;
+$link-underline-opacity-dark:  .45;
+$link-underline-color:         rgba($muf-cyan, $link-underline-opacity);
+$link-underline-color-dark:    rgba($muf-cyan, $link-underline-opacity-dark);
+$link-underline-hover-color:        rgba($muf-mint, .8);
+$link-underline-hover-color-dark:   rgba($muf-mint, .8);
+
+// --- Focus -------------------------------------------------------------------
+$focus-ring-width: .2rem;
+$focus-ring-opacity: .45;
+$focus-ring-color: rgba($muf-cyan, $focus-ring-opacity);
+
+// --- Typography ----------------------------------------------------------------
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base:       $font-family-sans-serif;
+$muf-font-display: "Space Grotesk", $font-family-sans-serif;
+$muf-font-mono:    "Space Mono", "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+
+$headings-font-family: $muf-font-display;
+$headings-font-weight: 700;
+$headings-line-height: 1.08;
+$headings-color:       $muf-ice;
+$headings-color-dark:  $muf-ice;
+$headings-margin-bottom: .75em;
+
+$font-size-base: 1.0625rem;
+$line-height-base: 1.65;
+$line-height-sm: 1.35;
+
+$h1-font-size: clamp(2.4rem, 5vw, 4.2rem);
+$h2-font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+$h3-font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+$h4-font-size: 1.2rem;
+$h5-font-size: 1.05rem;
+$h6-font-size: .95rem;
+
+$lead-font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+$lead-font-weight: 400;
+
+// --- Components: surfaces ------------------------------------------------------
+$card-bg:          $muf-surface-2;
+$card-bg-dark:     $muf-surface-2;
+$card-border-color:$muf-border;
+$card-border-color-dark: $muf-border;
+$card-color:       $muf-ice;
+$card-color-dark:  $muf-ice;
+$card-cap-bg:      rgba($muf-ice, .04);
+$card-cap-bg-dark: rgba($muf-ice, .04);
+$card-border-radius: .6rem;
+
+$list-group-bg:    $muf-surface-2;
+$list-group-bg-dark: $muf-surface-2;
+$list-group-border-color: $muf-border;
+$list-group-border-color-dark: $muf-border;
+$list-group-color: $muf-ice;
+$list-group-color-dark: $muf-ice;
+$list-group-hover-bg: rgba($muf-cyan, .07);
+$list-group-hover-bg-dark: rgba($muf-cyan, .07);
+$list-group-action-hover-color: $muf-mint;
+
+$dropdown-bg:            $muf-surface-3;
+$dropdown-bg-dark:       $muf-surface-3;
+$dropdown-border-color:  $muf-border;
+$dropdown-link-color:    $muf-ice;
+$dropdown-link-hover-color: $muf-mint;
+$dropdown-link-hover-bg: rgba($muf-cyan, .08);
+$dropdown-link-active-bg: $primary;
+
+$modal-content-bg:       $muf-surface-3;
+$modal-content-bg-dark:  $muf-surface-3;
+$modal-content-border-color: $muf-border;
+$modal-header-border-color:  $muf-border;
+
+$popover-bg:         $muf-surface-3;
+$popover-border-color: $muf-border;
+
+$toast-background-color: $muf-surface-3;
+
+// --- Components: forms ---------------------------------------------------------
+$input-bg:                  $muf-surface-2;
+$input-bg-dark:             $muf-surface-2;
+$input-color:               $muf-ice;
+$input-color-dark:          $muf-ice;
+$input-border-color:        $muf-border;
+$input-border-color-dark:   $muf-border;
+$input-placeholder-color:   $muf-muted;
+$input-placeholder-color-dark: $muf-muted;
+$input-focus-border-color:  $muf-cyan;
+$input-focus-border-color-dark: $muf-cyan;
+$input-group-addon-bg:      $muf-surface-3;
+$input-group-addon-bg-dark: $muf-surface-3;
+$form-select-bg:            $muf-surface-2;
+$form-select-bg-dark:       $muf-surface-2;
+$form-select-indicator-color: $muf-ice;
+$form-select-indicator:     none; // arrow rendered via css gradient-free styling in muf/forms
+$form-check-input-bg:       $muf-surface-2;
+$form-check-input-border:   1px solid $muf-border;
+
+// --- Components: navs & navbar ---------------------------------------------------
+$nav-link-color:            $muf-ice;
+$nav-link-color-dark:       $muf-ice;
+$nav-link-hover-color:      $muf-mint;
+$nav-link-hover-color-dark: $muf-mint;
+$nav-link-active-color:     $muf-cyan;
+$nav-link-disabled-color:   shade-color($muf-muted, 20%);
+$nav-pills-link-active-bg:  $primary;
+
+$navbar-dark-color:        $muf-ice;
+$navbar-dark-hover-color:  $muf-mint;
+$navbar-dark-active-color: $muf-cyan;
+$navbar-dark-disabled-color: shade-color($muf-muted, 20%);
+$navbar-dark-toggler-border-color: rgba($muf-ice, .25);
+
+// --- Components: breadcrumb / pagination / alert-tinted surfaces ------------------
+$breadcrumb-divider-color:  $muf-muted;
+$breadcrumb-active-color:   $muf-muted;
+$breadcrumb-active-color-dark: $muf-muted;
+$breadcrumb-link-color:     $muf-cyan;
+
+$pagination-color:          $muf-cyan;
+$pagination-bg:             transparent;
+$pagination-border-color:   $muf-border;
+$pagination-hover-color:    $muf-mint;
+$pagination-hover-bg:       rgba($muf-cyan, .08);
+$pagination-hover-border-color: $muf-border;
+$pagination-active-bg:      $primary;
+$pagination-active-color:   $muf-navy;
+$pagination-active-border-color: $primary;
+$pagination-disabled-color: shade-color($muf-muted, 20%);
+$pagination-disabled-bg:    transparent;
+$pagination-disabled-border-color: $muf-border;
+
+// Subtle tinted surfaces derived from the neon accents (dark-mode friendly)
+$primary-bg-subtle:        rgba($muf-cyan, .12);
+$primary-bg-subtle-dark:   rgba($muf-cyan, .12);
+$primary-border-subtle:    rgba($muf-cyan, .35);
+$primary-border-subtle-dark: rgba($muf-cyan, .35);
+$primary-text-emphasis:    $muf-cyan;
+$primary-text-emphasis-dark: $muf-cyan;
+$secondary-bg-subtle:      rgba($muf-violet, .14);
+$secondary-bg-subtle-dark: rgba($muf-violet, .14);
+$secondary-border-subtle:  rgba($muf-violet, .4);
+$secondary-border-subtle-dark: rgba($muf-violet, .4);
+$secondary-text-emphasis:  tint-color($muf-violet, 18%);
+$secondary-text-emphasis-dark: tint-color($muf-violet, 18%);
+$success-bg-subtle:        rgba($muf-mint, .12);
+$success-bg-subtle-dark:   rgba($muf-mint, .12);
+$success-border-subtle:    rgba($muf-mint, .35);
+$success-border-subtle-dark: rgba($muf-mint, .35);
+$success-text-emphasis:    $muf-mint;
+$success-text-emphasis-dark: $muf-mint;
+$info-bg-subtle:           rgba($muf-magenta, .12);
+$info-bg-subtle-dark:      rgba($muf-magenta, .12);
+$info-border-subtle:       rgba($muf-magenta, .35);
+$info-border-subtle-dark:  rgba($muf-magenta, .35);
+$info-text-emphasis:       $muf-magenta;
+$info-text-emphasis-dark:  $muf-magenta;
+$warning-bg-subtle:        rgba($muf-amber, .12);
+$warning-bg-subtle-dark:   rgba($muf-amber, .12);
+$warning-border-subtle:    rgba($muf-amber, .35);
+$warning-border-subtle-dark: rgba($muf-amber, .35);
+$warning-text-emphasis:    $muf-amber;
+$warning-text-emphasis-dark: $muf-amber;
+$danger-bg-subtle:         rgba($muf-coral, .12);
+$danger-bg-subtle-dark:    rgba($muf-coral, .12);
+$danger-border-subtle:     rgba($muf-coral, .35);
+$danger-border-subtle-dark:rgba($muf-coral, .35);
+$danger-text-emphasis:     $muf-coral;
+$danger-text-emphasis-dark: $muf-coral;
+$light-bg-subtle:          rgba($muf-ice, .06);
+$light-bg-subtle-dark:     rgba($muf-ice, .06);
+$light-border-subtle:      rgba($muf-ice, .18);
+$light-border-subtle-dark: rgba($muf-ice, .18);
+$light-text-emphasis:      $muf-ice;
+$light-text-emphasis-dark: $muf-ice;
+$dark-bg-subtle:           $muf-surface-2;
+$dark-bg-subtle-dark:      $muf-surface-2;
+$dark-border-subtle:       $muf-border;
+$dark-border-subtle-dark:  $muf-border;
+$dark-text-emphasis:       $muf-ice;
+$dark-text-emphasis-dark:  $muf-ice;
+
+// --- Buttons --------------------------------------------------------------------
+$btn-link-color:         $muf-cyan;
+$btn-link-hover-color:   $muf-mint;
+
+// --- Misc -----------------------------------------------------------------------
+$grid-gutter-width: 1.6rem;
+$cassiopeia-grid-gutter: $grid-gutter-width;
+$border-radius:    .5rem;
+$border-radius-sm: .35rem;
+$border-radius-lg: .75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.5rem;
+
+$hr-border-color:  $muf-border;
+$hr-opacity:       1;
+
+$table-color:      $muf-ice;
+$table-bg:         transparent;
+$table-border-color: $muf-border;
+$table-striped-bg: rgba($muf-ice, .035);
+
+$code-color:       $muf-mint;
+$kbd-bg:           $muf-surface-3;
+
+$mark-bg:          rgba($muf-amber, .3);
+
+$component-active-bg: $primary;
+$component-active-color: $muf-navy;
+
+// Cassiopeia-specific vars the inherited blocks depend on, recast for dark
+$cassiopeia-container-main-bg: $muf-navy;
+$cassiopeia-border-color:      $muf-border;
+$cassiopeia-box-shadow:        0 .5rem 2rem rgba(0, 0, 0, .35);
+$cassiopeia-block-header-bg:   $muf-surface-3;
+$cassiopeia-inverted-text-color: $muf-navy;
+
+$cassiopeia-card-title-bg: $muf-surface-3;
+
+// The header gradient is re-cast in muf/header; keep vars defined for b/c
+$cassiopeia-header-grad:     linear-gradient(135deg, rgba($muf-cyan, .12) 0%, rgba($muf-violet, .12) 100%);
+$cassiopeia-header-grad-rtl: linear-gradient(225deg, rgba($muf-cyan, .12) 0%, rgba($muf-violet, .12) 100%);

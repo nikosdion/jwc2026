@@ -1,0 +1,5 @@
+// The Museum of Unbuilt Futures — RTL entry point.
+// Bootstrap 5.3 handles RTL through logical properties and its RTL pipeline;
+// for this site's purposes the LTR build is reused as the RTL stylesheet.
+
+@import "template";

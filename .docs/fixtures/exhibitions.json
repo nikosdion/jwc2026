@@ -1,0 +1,40 @@
+{
+  "exhibitions": [
+    {
+      "key": "tomorrow-cancelled",
+      "title": "Tomorrow, Cancelled",
+      "alias": "tomorrow-cancelled",
+      "opening": "2026-09-18",
+      "closing": "2027-02-22",
+      "venue": "Gallery One",
+      "curator": "Prof. Barnaby Quill",
+      "image": "exhibition-tomorrow-cancelled",
+      "summary": "Spectacular technology promises that never materialised — from atomic family cars to rocket post — presented with the respect they almost earned.",
+      "body": "<p><em>Tomorrow, Cancelled</em> gathers the museum's most confident disappointments: machines announced with parades, financed with optimism, and cancelled with, at best, a memo. On view are forty objects and two hundred documents tracing the arc from unveiling to unravelling.</p><p>The exhibition opens with the Personal Nuclear Automobile of 1958 — the museum's most requested object — and closes with the Pocket Parliament of 1981, whose loan was negotiated for eleven months with an owner who asked, reasonably, what it might decide. Between them: the Transatlantic Pneumatic Railway, the Lunar Postal Service and the Stratoliner Meridian, each accompanied by its original marketing, its engineers' misgivings, and the point, carefully catalogued, at which hope became paperwork.</p><p>Highlights include the full lunar definitive stamp series (1965 printing), the Servo-Valet 3000's butler costume, and a listening station where visitors may hear the 1982 shutdown debate of the Pocket Parliament in full. It lasts forty minutes. The museum recommends the benches.</p><h3>Selected artifacts</h3><ul><li><a href=\"%ROUTE:nuclear-automobile%\">The Personal Nuclear Automobile (1958)</a></li><li><a href=\"%ROUTE:pneumatic-railway%\">The Transatlantic Pneumatic Railway (1895)</a></li><li><a href=\"%ROUTE:lunar-postal%\">The Lunar Postal Service (1956)</a></li><li><a href=\"%ROUTE:stratoliner%\">The Stratoliner Meridian (1952)</a></li><li><a href=\"%ROUTE:pocket-parliament%\">The Pocket Parliament (1981)</a></li></ul>"
+    },
+    {
+      "key": "house-of-the-future",
+      "title": "The House of the Future",
+      "alias": "the-house-of-the-future",
+      "opening": "2026-11-06",
+      "closing": "2027-04-05",
+      "venue": "Gallery Two",
+      "curator": "Dr. Imogen Vane",
+      "image": "exhibition-house-of-future",
+      "summary": "Devices intended to revolutionise domestic life — the chores they abolished, the technicians they required, and the cats they ironed.",
+      "body": "<p>Every era believes it is one appliance away from leisure. <em>The House of the Future</em> exhibits a century of that belief, from the 1909 Servo-Kitchenette to the Servo-Valet 3000, and measures each promise against its maintenance schedule.</p><p>The centrepiece is a full-scale 1962 'push-button home' interior, faithfully reconstructed from the Meteoron company's demonstration film — including the button marked DINNER, which in the film produces a meal and in the reconstruction, as the museum's label concedes, produces a label.</p><p>Around it: the Home Weather Controller and its legal correspondence; the Aerosol Dinner Programme's flavour console; and the Cognition Armchair Mk II, which — per standing conservators' instructions — visitors should not debate. The exhibition closes with a wall of warranties, extended to fifty years by manufacturers whose companies lasted nine.</p><h3>Selected artifacts</h3><ul><li><a href=\"%ROUTE:servo-valet%\">The Servo-Valet 3000 (1983)</a></li><li><a href=\"%ROUTE:weather-controller%\">The Home Weather Controller (1962)</a></li><li><a href=\"%ROUTE:cognition-armchair%\">The Cognition Armchair Mk II (1974)</a></li><li><a href=\"%ROUTE:aerosol-dinner%\">The Aerosol Dinner Programme (1971)</a></li></ul>"
+    },
+    {
+      "key": "cities-in-the-sky",
+      "title": "Cities in the Sky",
+      "alias": "cities-in-the-sky",
+      "opening": "2027-01-15",
+      "closing": "2027-06-06",
+      "venue": "The Planetarium Hall",
+      "curator": "Ms. Ines Krieger",
+      "image": "exhibition-cities-in-sky",
+      "summary": "Abandoned urban megastructures and impossible infrastructure — towers, tubes and domes for populations that had other plans.",
+      "body": "<p><em>Cities in the Sky</em> assembles the great unbuilt: the kilometre-high Heliopolis One arcology; the Garden City Elevator on its four courageous legs; the Panorama Dome; and the Subatlantic Vacuum Mall, connecting Boston to Lisbon beneath 4,800 metres of ocean and one enthusiastic waffle kiosk.</p><p>Staged in the museum's decommissioned planetarium — itself a building that survived by becoming something else — the exhibition pairs original presentation models with the planning refusals, union objections and acts of God that undid them. A central table invites visitors to arrange their own megastructure from magnetic components; the museum politely declines to forward the results to any authority.</p><p>The exhibition closes with the Walthamstow water tower, sole survivor of the 1909 Elevator scheme, photographed in 1998 by the museum's founder with the caption: 'It is still standing. Take note, all of you.'</p><h3>Selected artifacts</h3><ul><li><a href=\"%ROUTE:arcology-spire%\">Arcology Spire 'Heliopolis One' (1969)</a></li><li><a href=\"%ROUTE:garden-city-elevator%\">The Garden City Elevator (1909)</a></li><li><a href=\"%ROUTE:panorama-dome%\">The Panorama Dome Theatre (1977)</a></li><li><a href=\"%ROUTE:vacuum-mall%\">The Subatlantic Vacuum Mall (1986)</a></li></ul>"
+    }
+  ]
+}

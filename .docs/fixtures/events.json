@@ -1,0 +1,64 @@
+{
+  "events": [
+    {
+      "key": "curator-tour-tomorrow",
+      "title": "Curator's Tour: Tomorrow, Cancelled",
+      "alias": "curators-tour-tomorrow-cancelled",
+      "date": "2026-10-24 11:00:00",
+      "venue": "Gallery One",
+      "price": "£4.00, plus admission",
+      "image": "event-curator-tour",
+      "body": "<p>Prof. Barnaby Quill leads a sixty-minute tour of <em>Tomorrow, Cancelled</em>, sharing the catalogue entries that were too undignified to print — including the true story of the Pocket Parliament's coalition with the laboratory microwave.</p><p>Tours meet at the Gallery One threshold. Capacity is twenty; places may be reserved at the desk from one hour before. The tour concludes with a question the museum has never satisfactorily answered.</p>"
+    },
+    {
+      "key": "lecture-future-losing",
+      "title": "Lecture: Why the Future Keeps Losing",
+      "alias": "lecture-why-the-future-keeps-losing",
+      "date": "2026-11-12 19:00:00",
+      "venue": "Lecture Theatre",
+      "price": "Free; booking recommended",
+      "image": "event-lecture",
+      "body": "<p>Dr. Imogen Vane examines two centuries of confident forecasts, from the pneumatic railway to the paperless office of 1981, and asks why tomorrow — a place we have been describing with great precision since 1895 — has never once matched its brochure.</p><p>The lecture is followed by a reception in the Meridian Room. The museum's Cognition Armchair will not be attending, having declined on principle.</p>"
+    },
+    {
+      "key": "family-workshop",
+      "title": "Family Workshop: Build Your Own Unbelievable Machine",
+      "alias": "family-workshop-unbelievable-machine",
+      "date": "2026-11-29 10:30:00",
+      "venue": "The Making Room",
+      "price": "£5.00 per family",
+      "image": "event-workshop",
+      "body": "<p>Cardboard, string, optimism: families construct machines that could never work and present them to an audience of curators who will take each one completely seriously, as is museum policy.</p><p>Previous workshops have produced a solar-powered nightlight, a self-peeling banana, and a device for removing pips from oranges that was genuinely considered by the patent office in 1974. Ages 5 and up; aprons provided; dreams not included.</p>"
+    },
+    {
+      "key": "film-night",
+      "title": "Film Night: Chrome Dreams — Retrofuturist Shorts 1956–1979",
+      "alias": "film-night-chrome-dreams",
+      "date": "2026-12-11 20:00:00",
+      "venue": "The Panorama Room",
+      "price": "£7.00",
+      "image": "event-film-night",
+      "body": "<p>A programme of industrial and domestic future-films from the museum's archive, screened in the round: kitchens that cook by button, cars that park by whistle, and one 1962 film in which a family barbecues in the rain they have personally caused.</p><p>Introduced by the Chief Archivist. Total runtime 94 minutes; the museum's domed screening room rotates gently and is, visitors confirm, better than the one in Munich.</p>"
+    },
+    {
+      "key": "neon-nocturne",
+      "title": "Museum After Hours: Neon Nocturne",
+      "alias": "museum-after-hours-neon-nocturne",
+      "date": "2027-01-29 19:00:00",
+      "venue": "The whole museum",
+      "price": "£12.00",
+      "image": "event-after-hours",
+      "body": "<p>The galleries after dark: wireframe reconstructions at full glow, a live set from the synth ensemble <em>Variable Spacing</em>, and the bar in Gallery Two serving the Aerosol Dinner Programme's only surviving success — mist, but of gin.</p><p>Over-18s only. Last entry 21:30. The Cognition Armchair attends these evenings and, per its label, 'listens'.</p>"
+    },
+    {
+      "key": "conservation-open-studio",
+      "title": "Conservation Open Studio: The Wireframe Restoration",
+      "alias": "conservation-open-studio-wireframe-restoration",
+      "date": "2027-03-13 10:00:00",
+      "venue": "The Restoration Laboratory",
+      "price": "Free with admission",
+      "image": "event-conservation",
+      "body": "<p>Go behind the glass: conservators demonstrate how the museum reconstructs lost machines as luminous wireframe studies — the technique that gives the collection its signature glow.</p><p>Visitors may watch, ask questions, and suggest an object for future reconstruction. Suggestions are logged in the Big Book of Requests, which currently runs to four volumes and includes, on page 9,041, a submarine for pigeons.</p>"
+    }
+  ]
+}

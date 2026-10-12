@@ -1,0 +1,158 @@
+// ============================================================================
+// MUF — typography
+// Display type with retrofuturist restraint, mono "archival metadata" for
+// dates, specifications and collection references.
+// ============================================================================
+
+// The kicker: small mono uppercase label that precedes display headings.
+.muf-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-family: $muf-font-mono;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: $muf-cyan;
+  margin-bottom: .9rem;
+
+  // Tick mark before the label, like an instrument readout.
+  &::before {
+    content: "";
+    width: .55rem;
+    height: .55rem;
+    border: 1px solid currentColor;
+    box-shadow: inset 0 0 0 2px $muf-navy, inset 0 0 0 3px currentColor;
+  }
+
+  &.muf-kicker--magenta { color: $muf-magenta; }
+  &.muf-kicker--amber   { color: $muf-amber; }
+  &.muf-kicker--violet  { color: $muf-violet; }
+  &.muf-kicker--mint    { color: $muf-mint; }
+}
+
+// Oversized display headings get a subtle two-tone treatment: the outlined
+// half is rendered with a hairline text stroke (pure decoration — the text
+// itself remains real, selectable HTML).
+.muf-display {
+  font-family: $muf-font-display;
+  font-weight: 700;
+  line-height: $headings-line-height;
+  letter-spacing: -.015em;
+  text-wrap: balance;
+
+  .muf-display__ghost {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--muf-gridline-strong);
+    text-stroke: 1.5px var(--muf-gridline-strong);
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  @extend .muf-display;
+}
+
+// Archival metadata — the museum's "label text": mono, muted, letterspaced.
+.muf-meta {
+  font-family: $muf-font-mono;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  color: $muf-muted;
+
+  strong, b { color: $muf-ice; font-weight: 700; }
+
+  a { color: $muf-cyan; }
+}
+
+.muf-meta--cyan    { color: $muf-cyan; }
+.muf-meta--mint    { color: $muf-mint; }
+.muf-meta--magenta { color: $muf-magenta; }
+.muf-meta--amber   { color: $muf-amber; }
+
+// Specification rows: term/definition pairs rendered like an exhibit label.
+.muf-spec {
+  display: block;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-size: .95rem;
+
+  > div {
+    display: flex;
+    gap: .5rem 1.5rem;
+    align-items: baseline;
+    padding: .4rem 0;
+    border-bottom: 1px solid rgba($muf-border, .5);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  dt {
+    flex: 0 0 11rem;
+    font-family: $muf-font-mono;
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: $muf-muted;
+  }
+
+  dd {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    color: $muf-ice;
+  }
+
+  @include media-breakpoint-down(sm) {
+    > div { flex-direction: column; gap: .15rem; }
+    dt { flex-basis: auto; }
+  }
+}
+
+// Lead paragraphs in journal/exhibition intros.
+.muf-lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+  line-height: 1.55;
+  color: shade-color($muf-ice, 8%);
+}
+
+// Long-form article body measure — comfortable reading width.
+.muf-prose {
+  max-width: 46rem;
+
+  p { margin-bottom: 1.25em; }
+
+  // Pull the first paragraph of an intro slightly larger.
+  > p:first-of-type {
+    font-size: 1.14em;
+    color: shade-color($muf-ice, 6%);
+  }
+}
+
+// Underline style for links inside long prose only — chrome links (nav,
+// buttons, cards) keep their custom treatments.
+.muf-prose a,
+.muf-article-body a,
+.category-desc a,
+.com-content-article__body a {
+  text-decoration: underline;
+  text-decoration-color: rgba($muf-cyan, .4);
+  text-underline-offset: .18em;
+
+  &:hover {
+    text-decoration-color: rgba($muf-mint, .85);
+  }
+}
+
+// Journal standfirst: the article's lead paragraph, set apart from the
+// body measure.
+.muf-journal-standfirst {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: tint-color($muf-navy, 82%);
+  margin-bottom: 1.5em;
+  max-width: 40rem;
+}

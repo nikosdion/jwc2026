@@ -1,0 +1,44 @@
+// ============================================================================
+// MUF — CSS custom properties
+// Canonical palette tokens plus a handful of compatibility aliases for the
+// Cassiopeia blocks that read var(--cassiopeia-*).
+// ============================================================================
+
+:root {
+  // Canonical MUF tokens
+  --muf-cyan:    #{$muf-cyan};
+  --muf-violet:  #{$muf-violet};
+  --muf-mint:    #{$muf-mint};
+  --muf-coral:   #{$muf-coral};
+  --muf-amber:   #{$muf-amber};
+  --muf-magenta: #{$muf-magenta};
+  --muf-ice:     #{$muf-ice};
+  --muf-navy:    #{$muf-navy};
+
+  --muf-surface-2: #{$muf-surface-2};
+  --muf-surface-3: #{$muf-surface-3};
+  --muf-muted:     #{$muf-muted};
+  --muf-border:    #{$muf-border};
+
+  --muf-font-display: #{$muf-font-display};
+  --muf-font-body:    #{$font-family-sans-serif};
+  --muf-font-mono:    #{$muf-font-mono};
+
+  // Structural tokens
+  --muf-max-width: 82rem;
+  --muf-header-height: 4.5rem;
+  --muf-gridline: rgba(54, 245, 240, .07);   // faint technical gridlines
+  --muf-gridline-strong: rgba(54, 245, 240, .16);
+  --muf-hairline: #{$muf-border};
+}
+
+// Compatibility aliases for inherited Cassiopeia blocks
+:root {
+  --cassiopeia-color-primary: #{$muf-cyan};
+  --cassiopeia-color-hover:   #{$muf-mint};
+  --cassiopeia-color-link:    #{$muf-cyan};
+  --cassiopeia-font-family-body: #{$font-family-sans-serif};
+  --cassiopeia-font-family-headings: #{$muf-font-display};
+  --cassiopeia-font-weight-normal: 400;
+  --cassiopeia-font-weight-headings: 700;
+}
