@@ -11,6 +11,7 @@
 # --- Custom implementation -------------------------------------------------
 !/.gitignore
 !/README.md
+!/LICENSE.md
 !/AGENTS.md
 !/.docs
 !/.docs/**
