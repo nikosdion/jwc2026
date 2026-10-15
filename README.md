@@ -86,7 +86,7 @@ These are the credentials baked into this demonstration instance. **When
 restoring the site from a backup archive, change the Super User password
 immediately** (Users → Manage, or during the restoration's finalise step).
 
-📦 **Backup archive:** [to be published — placeholder link](#backup-archive)
+📦 **Backup archive:** [download from iCloud](https://www.icloud.com/iclouddrive/0cd6rf9DlUxq1cy0dtZSPZXcw)
 
 ## A few words about the intention
 
